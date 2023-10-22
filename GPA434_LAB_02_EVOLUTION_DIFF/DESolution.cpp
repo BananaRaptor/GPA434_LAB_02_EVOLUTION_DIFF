@@ -3,6 +3,9 @@
 DESolution::DESolution(size_t size)
 {
 	mData.resize(size);
+	mFitnessValue = 0;
+	mObjectiveValue = 0;
+	setZero();
 }
 
 bool DESolution::isDefined()
@@ -15,24 +18,37 @@ size_t DESolution::size()
 	return mData.size();
 }
 
-double DESolution::objectiveValue()
+double DESolution::objectiveValue() const
 {
 	return mObjectiveValue;
 }
 
-double DESolution::fitnessValue()
+
+double DESolution::fitnessValue() const
 {
 	return mFitnessValue;
 }
 
-size_t DESolution::operator[](size_t index)
+size_t& DESolution::operator[](size_t index)
+{
+	size_t temp = mData.at(index);
+	return temp;
+}
+
+
+
+const size_t DESolution::operator[](size_t index) const
 {
 	return mData.at(index);
 }
+ 
 
-const size_t& DESolution::operator[](size_t index) const
+void DESolution::setZero()
 {
-	return mData.at(index);
+	for (size_t i = 0; i < mData.size(); i++)
+	{
+		mData[i] = 0;
+	}
 }
 
 void DESolution::setup(DEDomain const& domain)
@@ -103,32 +119,32 @@ std::string DESolution::toString() const
 	return smPrefixNotation ;
 }
 
-size_t DESolution::fixedNotationPrecision()
+size_t fixedNotationPrecision()
 {
 	return smFixedNotationPrecision;
 }
 
-std::string DESolution::prefixNotation()
+std::string prefixNotation()
 {
 	return smPrefixNotation;
 }
 
-std::string DESolution::seperatorNotation()
+std::string seperatorNotation()
 {
 	return smSeparatorNotation;
 }
 
-std::string DESolution::suffixNotation()
+std::string suffixNotation()
 {
 	return smSuffixNotation;
 }
 
-void DESolution::setFixedNotationPrecision(size_t precision)
+void setFixedNotationPrecision(size_t precision)
 {
 	smFixedNotationPrecision = precision;
 }
 
-void DESolution::setNotationFormat(std::string& prefix, std::string& separator, std::string& suffix)
+void setNotationFormat(std::string& prefix, std::string& separator, std::string& suffix)
 {
 	smPrefixNotation = prefix;
 	smSeparatorNotation = separator;
