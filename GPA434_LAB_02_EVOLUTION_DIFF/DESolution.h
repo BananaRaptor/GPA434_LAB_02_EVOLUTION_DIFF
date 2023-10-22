@@ -27,8 +27,8 @@ public:
 
 	bool isDefined();
 	size_t size();
-	double objectiveValue();
-	double fitnessValue();
+	double objectiveValue() const;
+	double fitnessValue() const;
 	size_t& operator[] (size_t index);
 	const size_t operator[] (size_t index) const;
 

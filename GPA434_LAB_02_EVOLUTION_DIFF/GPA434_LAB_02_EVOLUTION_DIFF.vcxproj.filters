@@ -78,6 +78,9 @@
     <ClCompile Include="DEStatistics.cpp">
       <Filter>Fichiers sources\DE</Filter>
     </ClCompile>
+    <ClCompile Include="DEPopulation.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Console.h">
@@ -115,6 +118,9 @@
     </ClInclude>
     <ClInclude Include="DEStatistics.h">
       <Filter>Fichiers d%27en-tête\DE</Filter>
+    </ClInclude>
+    <ClInclude Include="DEPopulation.h">
+      <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
