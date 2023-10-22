@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Fichiers sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Fichiers de ressources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\DE">
+      <UniqueIdentifier>{64996b7f-d751-410b-b186-2722e8851feb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\ProblemDefinition">
+      <UniqueIdentifier>{bbe2398e-664a-4b58-8f11-9dbb98a55b91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Solver">
+      <UniqueIdentifier>{b1d6881c-573e-47ce-97ec-905e03e7f1d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Utilities">
+      <UniqueIdentifier>{33ab7e24-c5b7-4457-8171-f2d07ccaca5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\DE">
+      <UniqueIdentifier>{219b30f5-3c33-4ba8-8fcf-826a3393a6e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Utilities">
+      <UniqueIdentifier>{717e5550-52a5-473f-81e8-197f0f6e9298}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Solver">
+      <UniqueIdentifier>{20090552-8b29-4213-8e86-1ae22d1be986}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\ProblemDefinition">
+      <UniqueIdentifier>{33ba9029-6791-45bb-8508-822abb4677b4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CircleFittingProblem.cpp">
+      <Filter>Fichiers sources\ProblemDefinition</Filter>
+    </ClCompile>
+    <ClCompile Include="ExtremumFunctionProblem.cpp">
+      <Filter>Fichiers sources\ProblemDefinition</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenBoxProblem.cpp">
+      <Filter>Fichiers sources\ProblemDefinition</Filter>
+    </ClCompile>
+    <ClCompile Include="ProblemToSolve.cpp">
+      <Filter>Fichiers sources\ProblemDefinition</Filter>
+    </ClCompile>
+    <ClCompile Include="Console.cpp">
+      <Filter>Fichiers sources\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Fitness.cpp">
+      <Filter>Fichiers sources\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Interval.cpp">
+      <Filter>Fichiers sources\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Random.cpp">
+      <Filter>Fichiers sources\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreeSamplesWithOneExclusion.cpp">
+      <Filter>Fichiers sources\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="DEDomain.cpp">
+      <Filter>Fichiers sources\DE</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="DESolution.cpp">
+      <Filter>Fichiers sources\DE</Filter>
+    </ClCompile>
+    <ClCompile Include="DEStatistics.cpp">
+      <Filter>Fichiers sources\DE</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Console.h">
+      <Filter>Fichiers d%27en-tête\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Fitness.h">
+      <Filter>Fichiers d%27en-tête\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Interval.h">
+      <Filter>Fichiers d%27en-tête\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Random.h">
+      <Filter>Fichiers d%27en-tête\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreeSamplesWithOneExclusion.h">
+      <Filter>Fichiers d%27en-tête\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="CircleFittingProblem.h">
+      <Filter>Fichiers d%27en-tête\ProblemDefinition</Filter>
+    </ClInclude>
+    <ClInclude Include="ExtremumFunctionProblem.h">
+      <Filter>Fichiers d%27en-tête\ProblemDefinition</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenBoxProblem.h">
+      <Filter>Fichiers d%27en-tête\ProblemDefinition</Filter>
+    </ClInclude>
+    <ClInclude Include="ProblemToSolve.h">
+      <Filter>Fichiers d%27en-tête\ProblemDefinition</Filter>
+    </ClInclude>
+    <ClInclude Include="DEDomain.h">
+      <Filter>Fichiers d%27en-tête\DE</Filter>
+    </ClInclude>
+    <ClInclude Include="DESolution.h">
+      <Filter>Fichiers d%27en-tête\DE</Filter>
+    </ClInclude>
+    <ClInclude Include="DEStatistics.h">
+      <Filter>Fichiers d%27en-tête\DE</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,1337 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DE: Référence de la structure DEParameters</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DE
+   </div>
+   <div id="projectbrief">Implémentation de l&#39;algorithme à évolution différentielle.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a> &#124;
+<a href="#pri-attribs">Attributs privés</a> &#124;
+<a href="#pri-static-attribs">Attributs privés statiques</a> &#124;
+<a href="struct_d_e_parameters-members.html">Liste de tous les membres</a>  </div>
+  <div class="headertitle"><div class="title">Référence de la structure DEParameters</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Structure représentant les paramètres d'un algorithme à évolution différentielle.  
+ <a href="struct_d_e_parameters.html#details">Plus de détails...</a></p>
+
+<p><code>#include &lt;DEParameters.h&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:aa1c74a22d7a38d0ba8d7bc82e75ab3ce" id="r_aa1c74a22d7a38d0ba8d7bc82e75ab3ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#aa1c74a22d7a38d0ba8d7bc82e75ab3ce">DEParameters</a> ()</td></tr>
+<tr class="memdesc:aa1c74a22d7a38d0ba8d7bc82e75ab3ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur par défaut.  <br /></td></tr>
+<tr class="separator:aa1c74a22d7a38d0ba8d7bc82e75ab3ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cf995e4b581b948121a24a9cb394d60" id="r_a3cf995e4b581b948121a24a9cb394d60"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#a3cf995e4b581b948121a24a9cb394d60">DEParameters</a> (<a class="el" href="class_d_e_domain.html">DEDomain</a> const &amp;<a class="el" href="struct_d_e_parameters.html#a7f18b60c5146a25be4b3a577d7084547">domain</a>, size_t <a class="el" href="struct_d_e_parameters.html#a0298443cc570dcf94d66648360b25695">populationSize</a>, double kF, double kCR, size_t <a class="el" href="struct_d_e_parameters.html#a2d64057c69e49546d3c3a25923c63cd1">maximumGenerationCount</a>, <a class="el" href="group___d_e_types.html#gaa1bb3938ff22df1e54e01ab1839a5468">ObjectiveFunction</a> <a class="el" href="struct_d_e_parameters.html#a8d4bbd923215b46f4b5401cdaba29a0a">objectiveFunction</a>, <a class="el" href="group___d_e_types.html#ga826047d57b14bf962f395869707a14b7">FitnessFunction</a> <a class="el" href="struct_d_e_parameters.html#a3f484de4c3bd1b54deefeb92a39ff647">fitnessFunction</a>)</td></tr>
+<tr class="memdesc:a3cf995e4b581b948121a24a9cb394d60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur avec tous les paramètres.  <br /></td></tr>
+<tr class="separator:a3cf995e4b581b948121a24a9cb394d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0f90024d5e13329b182e385d2e260a3" id="r_af0f90024d5e13329b182e385d2e260a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#af0f90024d5e13329b182e385d2e260a3">DEParameters</a> (<a class="el" href="struct_d_e_parameters.html">DEParameters</a> const &amp;)=default</td></tr>
+<tr class="memdesc:af0f90024d5e13329b182e385d2e260a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de copie.  <br /></td></tr>
+<tr class="separator:af0f90024d5e13329b182e385d2e260a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e6b962df5ae7cbf13479c7ca0457fc8" id="r_a1e6b962df5ae7cbf13479c7ca0457fc8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_d_e_parameters.html">DEParameters</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#a1e6b962df5ae7cbf13479c7ca0457fc8">operator=</a> (<a class="el" href="struct_d_e_parameters.html">DEParameters</a> const &amp;)=default</td></tr>
+<tr class="memdesc:a1e6b962df5ae7cbf13479c7ca0457fc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opérateur d'affectation par copie.  <br /></td></tr>
+<tr class="separator:a1e6b962df5ae7cbf13479c7ca0457fc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af063cdbd52d34802be07282374610275" id="r_af063cdbd52d34802be07282374610275"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#af063cdbd52d34802be07282374610275">~DEParameters</a> ()=default</td></tr>
+<tr class="memdesc:af063cdbd52d34802be07282374610275"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructeur.  <br /></td></tr>
+<tr class="separator:af063cdbd52d34802be07282374610275"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f18b60c5146a25be4b3a577d7084547" id="r_a7f18b60c5146a25be4b3a577d7084547"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_d_e_domain.html">DEDomain</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#a7f18b60c5146a25be4b3a577d7084547">domain</a> () const</td></tr>
+<tr class="memdesc:a7f18b60c5146a25be4b3a577d7084547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accesseur retournant le domaine des paramètres.  <br /></td></tr>
+<tr class="separator:a7f18b60c5146a25be4b3a577d7084547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0298443cc570dcf94d66648360b25695" id="r_a0298443cc570dcf94d66648360b25695"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#a0298443cc570dcf94d66648360b25695">populationSize</a> () const</td></tr>
+<tr class="memdesc:a0298443cc570dcf94d66648360b25695"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accesseur retournant la taille de la population.  <br /></td></tr>
+<tr class="separator:a0298443cc570dcf94d66648360b25695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82e654f2f63ff41655dd8ffa2a039175" id="r_a82e654f2f63ff41655dd8ffa2a039175"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#a82e654f2f63ff41655dd8ffa2a039175">f</a> () const</td></tr>
+<tr class="memdesc:a82e654f2f63ff41655dd8ffa2a039175"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accesseur retournant le facteur de différentiation.  <br /></td></tr>
+<tr class="separator:a82e654f2f63ff41655dd8ffa2a039175"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb53c99f3eb4118f5b597340a84a9ca6" id="r_aeb53c99f3eb4118f5b597340a84a9ca6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#aeb53c99f3eb4118f5b597340a84a9ca6">cR</a> () const</td></tr>
+<tr class="memdesc:aeb53c99f3eb4118f5b597340a84a9ca6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accesseur retournant le taux de croisement.  <br /></td></tr>
+<tr class="separator:aeb53c99f3eb4118f5b597340a84a9ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d64057c69e49546d3c3a25923c63cd1" id="r_a2d64057c69e49546d3c3a25923c63cd1"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#a2d64057c69e49546d3c3a25923c63cd1">maximumGenerationCount</a> () const</td></tr>
+<tr class="memdesc:a2d64057c69e49546d3c3a25923c63cd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accesseur retournant le nombre maximal de générations.  <br /></td></tr>
+<tr class="separator:a2d64057c69e49546d3c3a25923c63cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d4bbd923215b46f4b5401cdaba29a0a" id="r_a8d4bbd923215b46f4b5401cdaba29a0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___d_e_types.html#gaa1bb3938ff22df1e54e01ab1839a5468">ObjectiveFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#a8d4bbd923215b46f4b5401cdaba29a0a">objectiveFunction</a> () const</td></tr>
+<tr class="memdesc:a8d4bbd923215b46f4b5401cdaba29a0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accesseur retournant la fonction objective utilisée.  <br /></td></tr>
+<tr class="separator:a8d4bbd923215b46f4b5401cdaba29a0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f484de4c3bd1b54deefeb92a39ff647" id="r_a3f484de4c3bd1b54deefeb92a39ff647"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___d_e_types.html#ga826047d57b14bf962f395869707a14b7">FitnessFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#a3f484de4c3bd1b54deefeb92a39ff647">fitnessFunction</a> () const</td></tr>
+<tr class="memdesc:a3f484de4c3bd1b54deefeb92a39ff647"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accesseur retournant la fonction de fitness utilisée.  <br /></td></tr>
+<tr class="separator:a3f484de4c3bd1b54deefeb92a39ff647"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af58168491b22a51b0cf4a3d79b919ecc" id="r_af58168491b22a51b0cf4a3d79b919ecc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#af58168491b22a51b0cf4a3d79b919ecc">isReady</a> () const</td></tr>
+<tr class="memdesc:af58168491b22a51b0cf4a3d79b919ecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accesseur vérifiant si les paramètres sont prêts pour être utilisés dans l'algorithme.  <br /></td></tr>
+<tr class="separator:af58168491b22a51b0cf4a3d79b919ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86f168fb61100664c284b23509afdbf7" id="r_a86f168fb61100664c284b23509afdbf7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#a86f168fb61100664c284b23509afdbf7">setDomain</a> (<a class="el" href="class_d_e_domain.html">DEDomain</a> const &amp;<a class="el" href="struct_d_e_parameters.html#a7f18b60c5146a25be4b3a577d7084547">domain</a>)</td></tr>
+<tr class="memdesc:a86f168fb61100664c284b23509afdbf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutateur définissant le domaine de la simulation.  <br /></td></tr>
+<tr class="separator:a86f168fb61100664c284b23509afdbf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae52e193acd346b239251f6ea4f1cf9b1" id="r_ae52e193acd346b239251f6ea4f1cf9b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#ae52e193acd346b239251f6ea4f1cf9b1">setPopulationSize</a> (size_t <a class="el" href="struct_d_e_parameters.html#a0298443cc570dcf94d66648360b25695">populationSize</a>)</td></tr>
+<tr class="memdesc:ae52e193acd346b239251f6ea4f1cf9b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutateur définissant la taille de la population.  <br /></td></tr>
+<tr class="separator:ae52e193acd346b239251f6ea4f1cf9b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ef4336dc5d928528991f14f1d44e7cf" id="r_a0ef4336dc5d928528991f14f1d44e7cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#a0ef4336dc5d928528991f14f1d44e7cf">setF</a> (double <a class="el" href="struct_d_e_parameters.html#a82e654f2f63ff41655dd8ffa2a039175">f</a>)</td></tr>
+<tr class="memdesc:a0ef4336dc5d928528991f14f1d44e7cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutateur définissant le facteur de différentiation.  <br /></td></tr>
+<tr class="separator:a0ef4336dc5d928528991f14f1d44e7cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeccbd67b5582b7e6e140a5176b815618" id="r_aeccbd67b5582b7e6e140a5176b815618"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#aeccbd67b5582b7e6e140a5176b815618">setCR</a> (double cr)</td></tr>
+<tr class="memdesc:aeccbd67b5582b7e6e140a5176b815618"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutateur définissant le taux de croisement.  <br /></td></tr>
+<tr class="separator:aeccbd67b5582b7e6e140a5176b815618"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39f7ed985655b6953bb29b48a5661a1d" id="r_a39f7ed985655b6953bb29b48a5661a1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#a39f7ed985655b6953bb29b48a5661a1d">setMaximumGenerationCount</a> (size_t maxGenerationCount)</td></tr>
+<tr class="memdesc:a39f7ed985655b6953bb29b48a5661a1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutateur définissant le nombre maximal de générations.  <br /></td></tr>
+<tr class="separator:a39f7ed985655b6953bb29b48a5661a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1005e4cfc1f54c32ae173121fcbc82d8" id="r_a1005e4cfc1f54c32ae173121fcbc82d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#a1005e4cfc1f54c32ae173121fcbc82d8">setObjectiveFunction</a> (<a class="el" href="group___d_e_types.html#gaa1bb3938ff22df1e54e01ab1839a5468">ObjectiveFunction</a> <a class="el" href="struct_d_e_parameters.html#a8d4bbd923215b46f4b5401cdaba29a0a">objectiveFunction</a>)</td></tr>
+<tr class="memdesc:a1005e4cfc1f54c32ae173121fcbc82d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutateur définissant la fonction objective.  <br /></td></tr>
+<tr class="separator:a1005e4cfc1f54c32ae173121fcbc82d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89581adfa1d9b4aa491da785eb6e3104" id="r_a89581adfa1d9b4aa491da785eb6e3104"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#a89581adfa1d9b4aa491da785eb6e3104">setFitnessFunction</a> (<a class="el" href="group___d_e_types.html#ga826047d57b14bf962f395869707a14b7">FitnessFunction</a> <a class="el" href="struct_d_e_parameters.html#a3f484de4c3bd1b54deefeb92a39ff647">fitnessFunction</a>)</td></tr>
+<tr class="memdesc:a89581adfa1d9b4aa491da785eb6e3104"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutateur définissant la fonction de fitness.  <br /></td></tr>
+<tr class="separator:a89581adfa1d9b4aa491da785eb6e3104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81dd7688a11c9cd698689980cdda0f7a" id="r_a81dd7688a11c9cd698689980cdda0f7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#a81dd7688a11c9cd698689980cdda0f7a">reset</a> ()</td></tr>
+<tr class="memdesc:a81dd7688a11c9cd698689980cdda0f7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Réinitialise tous les paramètres à leurs valeurs par défaut.  <br /></td></tr>
+<tr class="separator:a81dd7688a11c9cd698689980cdda0f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Attributs privés</h2></td></tr>
+<tr class="memitem:ad6f48d7d6019efae7e8611ac0242ba95" id="r_ad6f48d7d6019efae7e8611ac0242ba95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_d_e_domain.html">DEDomain</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#ad6f48d7d6019efae7e8611ac0242ba95">mDomain</a></td></tr>
+<tr class="memdesc:ad6f48d7d6019efae7e8611ac0242ba95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Domaine utilisé pour l'algorithme.  <br /></td></tr>
+<tr class="separator:ad6f48d7d6019efae7e8611ac0242ba95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1878ae8bba88d2a507dc1ef7d688f89" id="r_af1878ae8bba88d2a507dc1ef7d688f89"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#af1878ae8bba88d2a507dc1ef7d688f89">mPopulationSize</a></td></tr>
+<tr class="memdesc:af1878ae8bba88d2a507dc1ef7d688f89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Taille de la population.  <br /></td></tr>
+<tr class="separator:af1878ae8bba88d2a507dc1ef7d688f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae797fe510fd45a4eef27f333f47dfa9d" id="r_ae797fe510fd45a4eef27f333f47dfa9d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#ae797fe510fd45a4eef27f333f47dfa9d">mF</a></td></tr>
+<tr class="memdesc:ae797fe510fd45a4eef27f333f47dfa9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Facteur de différentiation.  <br /></td></tr>
+<tr class="separator:ae797fe510fd45a4eef27f333f47dfa9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae53fa81aefc4a2ae158782ec619592b1" id="r_ae53fa81aefc4a2ae158782ec619592b1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#ae53fa81aefc4a2ae158782ec619592b1">mCR</a></td></tr>
+<tr class="memdesc:ae53fa81aefc4a2ae158782ec619592b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Taux de croisement.  <br /></td></tr>
+<tr class="separator:ae53fa81aefc4a2ae158782ec619592b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae919b29875d62cd149bdb05be891e5e9" id="r_ae919b29875d62cd149bdb05be891e5e9"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#ae919b29875d62cd149bdb05be891e5e9">mMaxGenerationCount</a></td></tr>
+<tr class="memdesc:ae919b29875d62cd149bdb05be891e5e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nombre maximal de générations.  <br /></td></tr>
+<tr class="separator:ae919b29875d62cd149bdb05be891e5e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac47fa73becdcaa9609b207d10ef005a2" id="r_ac47fa73becdcaa9609b207d10ef005a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___d_e_types.html#gaa1bb3938ff22df1e54e01ab1839a5468">ObjectiveFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#ac47fa73becdcaa9609b207d10ef005a2">mObjectiveFunction</a></td></tr>
+<tr class="memdesc:ac47fa73becdcaa9609b207d10ef005a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction objective pour l'évaluation.  <br /></td></tr>
+<tr class="separator:ac47fa73becdcaa9609b207d10ef005a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd61a9adfe679ba627d67cea65da3c1d" id="r_afd61a9adfe679ba627d67cea65da3c1d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___d_e_types.html#ga826047d57b14bf962f395869707a14b7">FitnessFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#afd61a9adfe679ba627d67cea65da3c1d">mFitnessFunction</a></td></tr>
+<tr class="memdesc:afd61a9adfe679ba627d67cea65da3c1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction de fitness pour l'évaluation.  <br /></td></tr>
+<tr class="separator:afd61a9adfe679ba627d67cea65da3c1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Attributs privés statiques</h2></td></tr>
+<tr class="memitem:a7e6bca4623946901d1d067629190c6af" id="r_a7e6bca4623946901d1d067629190c6af"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#a7e6bca4623946901d1d067629190c6af">smMinPopulationSize</a> { 4 }</td></tr>
+<tr class="memdesc:a7e6bca4623946901d1d067629190c6af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Taille minimale de la population : 4.  <br /></td></tr>
+<tr class="separator:a7e6bca4623946901d1d067629190c6af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dbad86746c44c1ebc58cfba3ec4f22c" id="r_a4dbad86746c44c1ebc58cfba3ec4f22c"><td class="memItemLeft" align="right" valign="top">static const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#a4dbad86746c44c1ebc58cfba3ec4f22c">smMinF</a> { 0.0 }</td></tr>
+<tr class="memdesc:a4dbad86746c44c1ebc58cfba3ec4f22c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Facteur de différentiation minimum : 0.  <br /></td></tr>
+<tr class="separator:a4dbad86746c44c1ebc58cfba3ec4f22c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af254e642806192c9542b61823fefd3ec" id="r_af254e642806192c9542b61823fefd3ec"><td class="memItemLeft" align="right" valign="top">static const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#af254e642806192c9542b61823fefd3ec">smMinCR</a> { 0.0 }</td></tr>
+<tr class="memdesc:af254e642806192c9542b61823fefd3ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Taux de crossover minimum : 0.  <br /></td></tr>
+<tr class="separator:af254e642806192c9542b61823fefd3ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8161b993f554df94174d5f0ed64d99f7" id="r_a8161b993f554df94174d5f0ed64d99f7"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#a8161b993f554df94174d5f0ed64d99f7">smMinMaxGenerationCount</a> { 10 }</td></tr>
+<tr class="memdesc:a8161b993f554df94174d5f0ed64d99f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nombre minimal de générations : 10.  <br /></td></tr>
+<tr class="separator:a8161b993f554df94174d5f0ed64d99f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0affce2fd52c32496ec64fe7dd489636" id="r_a0affce2fd52c32496ec64fe7dd489636"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#a0affce2fd52c32496ec64fe7dd489636">smMaxPopulationSize</a> { 500 }</td></tr>
+<tr class="memdesc:a0affce2fd52c32496ec64fe7dd489636"><td class="mdescLeft">&#160;</td><td class="mdescRight">Taille maximale de la population : 500.  <br /></td></tr>
+<tr class="separator:a0affce2fd52c32496ec64fe7dd489636"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d7f284f8dce5cccdf2d1833158021bc" id="r_a4d7f284f8dce5cccdf2d1833158021bc"><td class="memItemLeft" align="right" valign="top">static const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#a4d7f284f8dce5cccdf2d1833158021bc">smMaxF</a> { 2.0 }</td></tr>
+<tr class="memdesc:a4d7f284f8dce5cccdf2d1833158021bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Facteur de différentiation maximum : 2.  <br /></td></tr>
+<tr class="separator:a4d7f284f8dce5cccdf2d1833158021bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22a9a224920ef67435a88bab904f86de" id="r_a22a9a224920ef67435a88bab904f86de"><td class="memItemLeft" align="right" valign="top">static const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#a22a9a224920ef67435a88bab904f86de">smMaxCR</a> { 1.0 }</td></tr>
+<tr class="memdesc:a22a9a224920ef67435a88bab904f86de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Taux de crossover maximum : 1.  <br /></td></tr>
+<tr class="separator:a22a9a224920ef67435a88bab904f86de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18c54e84c14c6e0194915a286019ef6b" id="r_a18c54e84c14c6e0194915a286019ef6b"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#a18c54e84c14c6e0194915a286019ef6b">smMaxMaxGenerationCount</a> { 10000 }</td></tr>
+<tr class="memdesc:a18c54e84c14c6e0194915a286019ef6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nombre maximal de générations : 10000.  <br /></td></tr>
+<tr class="separator:a18c54e84c14c6e0194915a286019ef6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf5ca1ef9aaa6a7a6a648239fdf2222b" id="r_acf5ca1ef9aaa6a7a6a648239fdf2222b"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#acf5ca1ef9aaa6a7a6a648239fdf2222b">smDefaultPopulationSize</a> { 25 }</td></tr>
+<tr class="memdesc:acf5ca1ef9aaa6a7a6a648239fdf2222b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Taille de la population par défaut : 25.  <br /></td></tr>
+<tr class="separator:acf5ca1ef9aaa6a7a6a648239fdf2222b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43034e6690cd64f7869172e4b36dd45c" id="r_a43034e6690cd64f7869172e4b36dd45c"><td class="memItemLeft" align="right" valign="top">static const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#a43034e6690cd64f7869172e4b36dd45c">smDefaultF</a> { (<a class="el" href="struct_d_e_parameters.html#a4dbad86746c44c1ebc58cfba3ec4f22c">smMinF</a> + <a class="el" href="struct_d_e_parameters.html#a4d7f284f8dce5cccdf2d1833158021bc">smMaxF</a>) / 2.0 }</td></tr>
+<tr class="memdesc:a43034e6690cd64f7869172e4b36dd45c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Facteur de différentiation par défaut : la valeur médiane de l'intervalle min et max.  <br /></td></tr>
+<tr class="separator:a43034e6690cd64f7869172e4b36dd45c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f32c4f8ff72b7b859003e4112296e2e" id="r_a7f32c4f8ff72b7b859003e4112296e2e"><td class="memItemLeft" align="right" valign="top">static const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#a7f32c4f8ff72b7b859003e4112296e2e">smDefaultCR</a> { (<a class="el" href="struct_d_e_parameters.html#af254e642806192c9542b61823fefd3ec">smMinCR</a> + <a class="el" href="struct_d_e_parameters.html#a22a9a224920ef67435a88bab904f86de">smMaxCR</a>) / 2.0 }</td></tr>
+<tr class="memdesc:a7f32c4f8ff72b7b859003e4112296e2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Taux de crossover par défaut : la valeur médiane de l'intervalle min et max.  <br /></td></tr>
+<tr class="separator:a7f32c4f8ff72b7b859003e4112296e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8030b8093aca32e0ef2fd935fe03e41c" id="r_a8030b8093aca32e0ef2fd935fe03e41c"><td class="memItemLeft" align="right" valign="top">static const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#a8030b8093aca32e0ef2fd935fe03e41c">smDefaultMaxGenerationCount</a> { 250 }</td></tr>
+<tr class="memdesc:a8030b8093aca32e0ef2fd935fe03e41c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nombre de générations par défaut : 250.  <br /></td></tr>
+<tr class="separator:a8030b8093aca32e0ef2fd935fe03e41c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a872f3f88445c4d421cb8c68adf59ee44" id="r_a872f3f88445c4d421cb8c68adf59ee44"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="group___d_e_types.html#ga826047d57b14bf962f395869707a14b7">FitnessFunction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_d_e_parameters.html#a872f3f88445c4d421cb8c68adf59ee44">mDefaultFitnessFunction</a> { Fitness::identity }</td></tr>
+<tr class="memdesc:a872f3f88445c4d421cb8c68adf59ee44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction de fitness par défaut : fonction identité.  <br /></td></tr>
+<tr class="separator:a872f3f88445c4d421cb8c68adf59ee44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Structure représentant les paramètres d'un algorithme à évolution différentielle. </p>
+<p>Cette structure encapsule tous les paramètres nécessaires pour configurer et exécuter l'algorithme à évolution différentielle. Elle offre des fonctionnalités pour définir, accéder et réinitialiser ces paramètres. </p>
+</div><h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="aa1c74a22d7a38d0ba8d7bc82e75ab3ce" name="aa1c74a22d7a38d0ba8d7bc82e75ab3ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1c74a22d7a38d0ba8d7bc82e75ab3ce">&#9670;&#160;</a></span>DEParameters() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DEParameters::DEParameters </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructeur par défaut. </p>
+<p>Initialise les paramètres avec des valeurs par défaut.</p>
+<div class="fragment"><div class="line"><a class="code hl_struct" href="struct_d_e_parameters.html">DEParameters</a> parameters;</div>
+<div class="ttc" id="astruct_d_e_parameters_html"><div class="ttname"><a href="struct_d_e_parameters.html">DEParameters</a></div><div class="ttdoc">Structure représentant les paramètres d'un algorithme à évolution différentielle.</div><div class="ttdef"><b>Definition</b> DEParameters.h:21</div></div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="a3cf995e4b581b948121a24a9cb394d60" name="a3cf995e4b581b948121a24a9cb394d60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cf995e4b581b948121a24a9cb394d60">&#9670;&#160;</a></span>DEParameters() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DEParameters::DEParameters </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_d_e_domain.html">DEDomain</a> const &amp;&#160;</td>
+          <td class="paramname"><em>domain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>populationSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>kF</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>kCR</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>maximumGenerationCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___d_e_types.html#gaa1bb3938ff22df1e54e01ab1839a5468">ObjectiveFunction</a>&#160;</td>
+          <td class="paramname"><em>objectiveFunction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___d_e_types.html#ga826047d57b14bf962f395869707a14b7">FitnessFunction</a>&#160;</td>
+          <td class="paramname"><em>fitnessFunction</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructeur avec tous les paramètres. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domain</td><td>Le domaine du problème à résoudre. </td></tr>
+    <tr><td class="paramname">populationSize</td><td>La taille de la population. </td></tr>
+    <tr><td class="paramname">kF</td><td>Le facteur de différentiation. </td></tr>
+    <tr><td class="paramname">kCR</td><td>Le taux de croisement. </td></tr>
+    <tr><td class="paramname">maximumGenerationCount</td><td>Le nombre maximum de générations. </td></tr>
+    <tr><td class="paramname">objectiveFunction</td><td>La fonction objective utilisée. </td></tr>
+    <tr><td class="paramname">fitnessFunction</td><td>La fonction de fitness utilisée.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a class="code hl_class" href="class_d_e_domain.html">DEDomain</a> <a class="code hl_function" href="struct_d_e_parameters.html#a7f18b60c5146a25be4b3a577d7084547">domain</a>;</div>
+<div class="line"><a class="code hl_struct" href="struct_d_e_parameters.html">DEParameters</a> parameters(<a class="code hl_function" href="struct_d_e_parameters.html#a7f18b60c5146a25be4b3a577d7084547">domain</a>, 100, 0.5, 0.9, 1000, objFunction, fitFunction);</div>
+<div class="ttc" id="aclass_d_e_domain_html"><div class="ttname"><a href="class_d_e_domain.html">DEDomain</a></div><div class="ttdoc">Classe représentant le domaine de l'algorithme à évolution différentielle.</div><div class="ttdef"><b>Definition</b> DEDomain.h:20</div></div>
+<div class="ttc" id="astruct_d_e_parameters_html_a7f18b60c5146a25be4b3a577d7084547"><div class="ttname"><a href="struct_d_e_parameters.html#a7f18b60c5146a25be4b3a577d7084547">DEParameters::domain</a></div><div class="ttdeci">DEDomain domain() const</div><div class="ttdoc">Accesseur retournant le domaine des paramètres.</div><div class="ttdef"><b>Definition</b> DEParameters.cpp:45</div></div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="af0f90024d5e13329b182e385d2e260a3" name="af0f90024d5e13329b182e385d2e260a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0f90024d5e13329b182e385d2e260a3">&#9670;&#160;</a></span>DEParameters() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DEParameters::DEParameters </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_d_e_parameters.html">DEParameters</a> const &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructeur de copie. </p>
+<p>Crée un nouveau groupe de paramètres identique à celui passé en argument. <b>L'implémentation par défaut est utilisée.</b></p>
+<div class="fragment"><div class="line"><a class="code hl_struct" href="struct_d_e_parameters.html">DEParameters</a> originalParams;</div>
+<div class="line"><a class="code hl_struct" href="struct_d_e_parameters.html">DEParameters</a> copiedParams(originalParams);</div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="af063cdbd52d34802be07282374610275" name="af063cdbd52d34802be07282374610275"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af063cdbd52d34802be07282374610275">&#9670;&#160;</a></span>~DEParameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DEParameters::~DEParameters </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destructeur. </p>
+<p><b>L'implémentation par défaut est utilisée.</b> </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="aeb53c99f3eb4118f5b597340a84a9ca6" name="aeb53c99f3eb4118f5b597340a84a9ca6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb53c99f3eb4118f5b597340a84a9ca6">&#9670;&#160;</a></span>cR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double DEParameters::cR </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Accesseur retournant le taux de croisement. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Le taux de croisement.</dd></dl>
+<div class="fragment"><div class="line"><a class="code hl_struct" href="struct_d_e_parameters.html">DEParameters</a> params;</div>
+<div class="line"><span class="keywordtype">double</span> crossoverRate{ params.<a class="code hl_function" href="struct_d_e_parameters.html#aeb53c99f3eb4118f5b597340a84a9ca6">cR</a>() };</div>
+<div class="ttc" id="astruct_d_e_parameters_html_aeb53c99f3eb4118f5b597340a84a9ca6"><div class="ttname"><a href="struct_d_e_parameters.html#aeb53c99f3eb4118f5b597340a84a9ca6">DEParameters::cR</a></div><div class="ttdeci">double cR() const</div><div class="ttdoc">Accesseur retournant le taux de croisement.</div><div class="ttdef"><b>Definition</b> DEParameters.cpp:60</div></div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="a7f18b60c5146a25be4b3a577d7084547" name="a7f18b60c5146a25be4b3a577d7084547"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f18b60c5146a25be4b3a577d7084547">&#9670;&#160;</a></span>domain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_d_e_domain.html">DEDomain</a> DEParameters::domain </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Accesseur retournant le domaine des paramètres. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Le domaine utilisé.</dd></dl>
+<div class="fragment"><div class="line"><a class="code hl_struct" href="struct_d_e_parameters.html">DEParameters</a> params;</div>
+<div class="line"><a class="code hl_class" href="class_d_e_domain.html">DEDomain</a> myDomain(params.<a class="code hl_function" href="struct_d_e_parameters.html#a7f18b60c5146a25be4b3a577d7084547">domain</a>());</div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="a82e654f2f63ff41655dd8ffa2a039175" name="a82e654f2f63ff41655dd8ffa2a039175"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82e654f2f63ff41655dd8ffa2a039175">&#9670;&#160;</a></span>f()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double DEParameters::f </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Accesseur retournant le facteur de différentiation. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Le facteur de différentiation.</dd></dl>
+<div class="fragment"><div class="line"><a class="code hl_struct" href="struct_d_e_parameters.html">DEParameters</a> params;</div>
+<div class="line"><span class="keywordtype">double</span> differentiationFactor{ params.<a class="code hl_function" href="struct_d_e_parameters.html#a82e654f2f63ff41655dd8ffa2a039175">f</a>() };</div>
+<div class="ttc" id="astruct_d_e_parameters_html_a82e654f2f63ff41655dd8ffa2a039175"><div class="ttname"><a href="struct_d_e_parameters.html#a82e654f2f63ff41655dd8ffa2a039175">DEParameters::f</a></div><div class="ttdeci">double f() const</div><div class="ttdoc">Accesseur retournant le facteur de différentiation.</div><div class="ttdef"><b>Definition</b> DEParameters.cpp:55</div></div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="a3f484de4c3bd1b54deefeb92a39ff647" name="a3f484de4c3bd1b54deefeb92a39ff647"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f484de4c3bd1b54deefeb92a39ff647">&#9670;&#160;</a></span>fitnessFunction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___d_e_types.html#ga826047d57b14bf962f395869707a14b7">FitnessFunction</a> DEParameters::fitnessFunction </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Accesseur retournant la fonction de fitness utilisée. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>La fonction de fitness.</dd></dl>
+<div class="fragment"><div class="line"><a class="code hl_struct" href="struct_d_e_parameters.html">DEParameters</a> params;</div>
+<div class="line"><a class="code hl_typedef" href="group___d_e_types.html#ga826047d57b14bf962f395869707a14b7">FitnessFunction</a> fitFunc{ params.<a class="code hl_function" href="struct_d_e_parameters.html#a3f484de4c3bd1b54deefeb92a39ff647">fitnessFunction</a>() };</div>
+<div class="ttc" id="agroup___d_e_types_html_ga826047d57b14bf962f395869707a14b7"><div class="ttname"><a href="group___d_e_types.html#ga826047d57b14bf962f395869707a14b7">FitnessFunction</a></div><div class="ttdeci">double(*)(double) FitnessFunction</div><div class="ttdoc">Définit le type de fonction pour l'évaluation de la fitness d'une solution.</div><div class="ttdef"><b>Definition</b> DEFunctions.h:60</div></div>
+<div class="ttc" id="astruct_d_e_parameters_html_a3f484de4c3bd1b54deefeb92a39ff647"><div class="ttname"><a href="struct_d_e_parameters.html#a3f484de4c3bd1b54deefeb92a39ff647">DEParameters::fitnessFunction</a></div><div class="ttdeci">FitnessFunction fitnessFunction() const</div><div class="ttdoc">Accesseur retournant la fonction de fitness utilisée.</div><div class="ttdef"><b>Definition</b> DEParameters.cpp:75</div></div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="af58168491b22a51b0cf4a3d79b919ecc" name="af58168491b22a51b0cf4a3d79b919ecc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af58168491b22a51b0cf4a3d79b919ecc">&#9670;&#160;</a></span>isReady()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DEParameters::isReady </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Accesseur vérifiant si les paramètres sont prêts pour être utilisés dans l'algorithme. </p>
+<p>Cette fonction retourne vrai seulement si tous les paramètres permettent d'exécuter une simulation. Évidemment, une validation rudimentaire des paramètres est effectués, la convergence des paramètres n'est pas validée et garantie.</p>
+<p>Les conditions sont les suivantes :</p><ul>
+<li>le domaine est défini</li>
+<li>la taille de la population se retrouve dans l'intervalle [minimum, maximum] défini</li>
+<li>le facteur de différentiation <code>F</code> se retrouve dans l'intervalle [minimum, maximum] défini</li>
+<li>le taux de mutation <code>CR</code> se retrouve dans l'intervalle [minimum, maximum] défini</li>
+<li>le nombre de génération maximal se retrouve dans l'intervalle [minimum, maximum] défini</li>
+<li>la fonction objective est définie</li>
+<li>la fonction de fitness est définie</li>
+</ul>
+<dl class="section return"><dt>Renvoie</dt><dd>Vrai si les paramètres sont correctement configurés, sinon faux.</dd></dl>
+<div class="fragment"><div class="line"><a class="code hl_struct" href="struct_d_e_parameters.html">DEParameters</a> params;</div>
+<div class="line"><span class="comment">// params...</span></div>
+<div class="line"><span class="keywordtype">bool</span> readyStatus{ params.<a class="code hl_function" href="struct_d_e_parameters.html#af58168491b22a51b0cf4a3d79b919ecc">isReady</a>() };</div>
+<div class="ttc" id="astruct_d_e_parameters_html_af58168491b22a51b0cf4a3d79b919ecc"><div class="ttname"><a href="struct_d_e_parameters.html#af58168491b22a51b0cf4a3d79b919ecc">DEParameters::isReady</a></div><div class="ttdeci">bool isReady() const</div><div class="ttdoc">Accesseur vérifiant si les paramètres sont prêts pour être utilisés dans l'algorithme.</div><div class="ttdef"><b>Definition</b> DEParameters.cpp:80</div></div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="a2d64057c69e49546d3c3a25923c63cd1" name="a2d64057c69e49546d3c3a25923c63cd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d64057c69e49546d3c3a25923c63cd1">&#9670;&#160;</a></span>maximumGenerationCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t DEParameters::maximumGenerationCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Accesseur retournant le nombre maximal de générations. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>Le nombre maximal de générations.</dd></dl>
+<div class="fragment"><div class="line"><a class="code hl_struct" href="struct_d_e_parameters.html">DEParameters</a> params;</div>
+<div class="line"><span class="keywordtype">size_t</span> maxGen{ params.<a class="code hl_function" href="struct_d_e_parameters.html#a2d64057c69e49546d3c3a25923c63cd1">maximumGenerationCount</a>() };</div>
+<div class="ttc" id="astruct_d_e_parameters_html_a2d64057c69e49546d3c3a25923c63cd1"><div class="ttname"><a href="struct_d_e_parameters.html#a2d64057c69e49546d3c3a25923c63cd1">DEParameters::maximumGenerationCount</a></div><div class="ttdeci">size_t maximumGenerationCount() const</div><div class="ttdoc">Accesseur retournant le nombre maximal de générations.</div><div class="ttdef"><b>Definition</b> DEParameters.cpp:65</div></div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="a8d4bbd923215b46f4b5401cdaba29a0a" name="a8d4bbd923215b46f4b5401cdaba29a0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d4bbd923215b46f4b5401cdaba29a0a">&#9670;&#160;</a></span>objectiveFunction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___d_e_types.html#gaa1bb3938ff22df1e54e01ab1839a5468">ObjectiveFunction</a> DEParameters::objectiveFunction </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Accesseur retournant la fonction objective utilisée. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>La fonction objective.</dd></dl>
+<div class="fragment"><div class="line"><a class="code hl_struct" href="struct_d_e_parameters.html">DEParameters</a> params;</div>
+<div class="line"><a class="code hl_typedef" href="group___d_e_types.html#gaa1bb3938ff22df1e54e01ab1839a5468">ObjectiveFunction</a> objFunc{ params.<a class="code hl_function" href="struct_d_e_parameters.html#a8d4bbd923215b46f4b5401cdaba29a0a">objectiveFunction</a>() };</div>
+<div class="ttc" id="agroup___d_e_types_html_gaa1bb3938ff22df1e54e01ab1839a5468"><div class="ttname"><a href="group___d_e_types.html#gaa1bb3938ff22df1e54e01ab1839a5468">ObjectiveFunction</a></div><div class="ttdeci">double(*)(DESolution const &amp;) ObjectiveFunction</div><div class="ttdoc">Définit le type de fonction pour l'évaluation objective d'une solution.</div><div class="ttdef"><b>Definition</b> DEFunctions.h:34</div></div>
+<div class="ttc" id="astruct_d_e_parameters_html_a8d4bbd923215b46f4b5401cdaba29a0a"><div class="ttname"><a href="struct_d_e_parameters.html#a8d4bbd923215b46f4b5401cdaba29a0a">DEParameters::objectiveFunction</a></div><div class="ttdeci">ObjectiveFunction objectiveFunction() const</div><div class="ttdoc">Accesseur retournant la fonction objective utilisée.</div><div class="ttdef"><b>Definition</b> DEParameters.cpp:70</div></div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="a1e6b962df5ae7cbf13479c7ca0457fc8" name="a1e6b962df5ae7cbf13479c7ca0457fc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e6b962df5ae7cbf13479c7ca0457fc8">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_d_e_parameters.html">DEParameters</a> &amp; DEParameters::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_d_e_parameters.html">DEParameters</a> const &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Opérateur d'affectation par copie. </p>
+<p><b>L'implémentation par défaut est utilisée.</b></p>
+<dl class="section return"><dt>Renvoie</dt><dd>Une référence vers l'objet courant.</dd></dl>
+<div class="fragment"><div class="line"><a class="code hl_struct" href="struct_d_e_parameters.html">DEParameters</a> params1;</div>
+<div class="line"><a class="code hl_struct" href="struct_d_e_parameters.html">DEParameters</a> params2;</div>
+<div class="line">params2 = params1;</div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="a0298443cc570dcf94d66648360b25695" name="a0298443cc570dcf94d66648360b25695"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0298443cc570dcf94d66648360b25695">&#9670;&#160;</a></span>populationSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t DEParameters::populationSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Accesseur retournant la taille de la population. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>La taille de la population.</dd></dl>
+<div class="fragment"><div class="line"><a class="code hl_struct" href="struct_d_e_parameters.html">DEParameters</a> params;</div>
+<div class="line"><span class="keywordtype">size_t</span> popSize{ params.<a class="code hl_function" href="struct_d_e_parameters.html#a0298443cc570dcf94d66648360b25695">populationSize</a>() };</div>
+<div class="ttc" id="astruct_d_e_parameters_html_a0298443cc570dcf94d66648360b25695"><div class="ttname"><a href="struct_d_e_parameters.html#a0298443cc570dcf94d66648360b25695">DEParameters::populationSize</a></div><div class="ttdeci">size_t populationSize() const</div><div class="ttdoc">Accesseur retournant la taille de la population.</div><div class="ttdef"><b>Definition</b> DEParameters.cpp:50</div></div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="a81dd7688a11c9cd698689980cdda0f7a" name="a81dd7688a11c9cd698689980cdda0f7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81dd7688a11c9cd698689980cdda0f7a">&#9670;&#160;</a></span>reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DEParameters::reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Réinitialise tous les paramètres à leurs valeurs par défaut. </p>
+<p>Voir les variables <code>smDefault...</code> pour les détails. Le domaine par défaut est un domaine non défini. La fonction objective est le pointeur <code>nullptr</code>.</p>
+<div class="fragment"><div class="line"><a class="code hl_struct" href="struct_d_e_parameters.html">DEParameters</a> params;</div>
+<div class="line">params.<a class="code hl_function" href="struct_d_e_parameters.html#a81dd7688a11c9cd698689980cdda0f7a">reset</a>();</div>
+<div class="ttc" id="astruct_d_e_parameters_html_a81dd7688a11c9cd698689980cdda0f7a"><div class="ttname"><a href="struct_d_e_parameters.html#a81dd7688a11c9cd698689980cdda0f7a">DEParameters::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdoc">Réinitialise tous les paramètres à leurs valeurs par défaut.</div><div class="ttdef"><b>Definition</b> DEParameters.cpp:126</div></div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="aeccbd67b5582b7e6e140a5176b815618" name="aeccbd67b5582b7e6e140a5176b815618"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeccbd67b5582b7e6e140a5176b815618">&#9670;&#160;</a></span>setCR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DEParameters::setCR </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>cr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mutateur définissant le taux de croisement. </p>
+<p>Le taux de croisement est borné dans l'intervalle [0, 1].</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cr</td><td>La nouvelle valeur pour le taux de croisement.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a class="code hl_struct" href="struct_d_e_parameters.html">DEParameters</a> params;</div>
+<div class="line">params.<a class="code hl_function" href="struct_d_e_parameters.html#aeccbd67b5582b7e6e140a5176b815618">setCR</a>(0.8);</div>
+<div class="ttc" id="astruct_d_e_parameters_html_aeccbd67b5582b7e6e140a5176b815618"><div class="ttname"><a href="struct_d_e_parameters.html#aeccbd67b5582b7e6e140a5176b815618">DEParameters::setCR</a></div><div class="ttdeci">void setCR(double cr)</div><div class="ttdoc">Mutateur définissant le taux de croisement.</div><div class="ttdef"><b>Definition</b> DEParameters.cpp:106</div></div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="a86f168fb61100664c284b23509afdbf7" name="a86f168fb61100664c284b23509afdbf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86f168fb61100664c284b23509afdbf7">&#9670;&#160;</a></span>setDomain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DEParameters::setDomain </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_d_e_domain.html">DEDomain</a> const &amp;&#160;</td>
+          <td class="paramname"><em>domain</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mutateur définissant le domaine de la simulation. </p>
+<p>Aucune validation spécifique n'est faite sur le domaine entrant. Il est ainsi possible de mettre un domaine non définie.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">domain</td><td>Le nouveau domaine.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a class="code hl_struct" href="struct_d_e_parameters.html">DEParameters</a> params;</div>
+<div class="line"><a class="code hl_class" href="class_d_e_domain.html">DEDomain</a> newDomain;</div>
+<div class="line"><span class="comment">// newDomain...</span></div>
+<div class="line">params.<a class="code hl_function" href="struct_d_e_parameters.html#a86f168fb61100664c284b23509afdbf7">setDomain</a>(newDomain);</div>
+<div class="ttc" id="astruct_d_e_parameters_html_a86f168fb61100664c284b23509afdbf7"><div class="ttname"><a href="struct_d_e_parameters.html#a86f168fb61100664c284b23509afdbf7">DEParameters::setDomain</a></div><div class="ttdeci">void setDomain(DEDomain const &amp;domain)</div><div class="ttdoc">Mutateur définissant le domaine de la simulation.</div><div class="ttdef"><b>Definition</b> DEParameters.cpp:91</div></div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="a0ef4336dc5d928528991f14f1d44e7cf" name="a0ef4336dc5d928528991f14f1d44e7cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ef4336dc5d928528991f14f1d44e7cf">&#9670;&#160;</a></span>setF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DEParameters::setF </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mutateur définissant le facteur de différentiation. </p>
+<p>Le facteur de différentiation est borné dans l'intervalle [0, 2].</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>La nouvelle valeur pour le facteur de différentiation.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a class="code hl_struct" href="struct_d_e_parameters.html">DEParameters</a> params;</div>
+<div class="line">params.<a class="code hl_function" href="struct_d_e_parameters.html#a0ef4336dc5d928528991f14f1d44e7cf">setF</a>(0.7);</div>
+<div class="ttc" id="astruct_d_e_parameters_html_a0ef4336dc5d928528991f14f1d44e7cf"><div class="ttname"><a href="struct_d_e_parameters.html#a0ef4336dc5d928528991f14f1d44e7cf">DEParameters::setF</a></div><div class="ttdeci">void setF(double f)</div><div class="ttdoc">Mutateur définissant le facteur de différentiation.</div><div class="ttdef"><b>Definition</b> DEParameters.cpp:101</div></div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="a89581adfa1d9b4aa491da785eb6e3104" name="a89581adfa1d9b4aa491da785eb6e3104"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89581adfa1d9b4aa491da785eb6e3104">&#9670;&#160;</a></span>setFitnessFunction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DEParameters::setFitnessFunction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___d_e_types.html#ga826047d57b14bf962f395869707a14b7">FitnessFunction</a>&#160;</td>
+          <td class="paramname"><em>fitnessFunction</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mutateur définissant la fonction de fitness. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fitnessFunction</td><td>La nouvelle fonction de fitness.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a class="code hl_struct" href="struct_d_e_parameters.html">DEParameters</a> params;</div>
+<div class="line">params.<a class="code hl_function" href="struct_d_e_parameters.html#a89581adfa1d9b4aa491da785eb6e3104">setFitnessFunction</a>(myFitnessFunction);</div>
+<div class="ttc" id="astruct_d_e_parameters_html_a89581adfa1d9b4aa491da785eb6e3104"><div class="ttname"><a href="struct_d_e_parameters.html#a89581adfa1d9b4aa491da785eb6e3104">DEParameters::setFitnessFunction</a></div><div class="ttdeci">void setFitnessFunction(FitnessFunction fitnessFunction)</div><div class="ttdoc">Mutateur définissant la fonction de fitness.</div><div class="ttdef"><b>Definition</b> DEParameters.cpp:121</div></div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="a39f7ed985655b6953bb29b48a5661a1d" name="a39f7ed985655b6953bb29b48a5661a1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39f7ed985655b6953bb29b48a5661a1d">&#9670;&#160;</a></span>setMaximumGenerationCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DEParameters::setMaximumGenerationCount </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>maxGenerationCount</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mutateur définissant le nombre maximal de générations. </p>
+<p>Le nombre maximal de générations est borné dans l'intervalle [10, 10000].</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">maxGenerationCount</td><td>La nouvelle valeur pour le nombre maximal de générations.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a class="code hl_struct" href="struct_d_e_parameters.html">DEParameters</a> params;</div>
+<div class="line">params.<a class="code hl_function" href="struct_d_e_parameters.html#a39f7ed985655b6953bb29b48a5661a1d">setMaximumGenerationCount</a>(1500);</div>
+<div class="ttc" id="astruct_d_e_parameters_html_a39f7ed985655b6953bb29b48a5661a1d"><div class="ttname"><a href="struct_d_e_parameters.html#a39f7ed985655b6953bb29b48a5661a1d">DEParameters::setMaximumGenerationCount</a></div><div class="ttdeci">void setMaximumGenerationCount(size_t maxGenerationCount)</div><div class="ttdoc">Mutateur définissant le nombre maximal de générations.</div><div class="ttdef"><b>Definition</b> DEParameters.cpp:111</div></div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="a1005e4cfc1f54c32ae173121fcbc82d8" name="a1005e4cfc1f54c32ae173121fcbc82d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1005e4cfc1f54c32ae173121fcbc82d8">&#9670;&#160;</a></span>setObjectiveFunction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DEParameters::setObjectiveFunction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___d_e_types.html#gaa1bb3938ff22df1e54e01ab1839a5468">ObjectiveFunction</a>&#160;</td>
+          <td class="paramname"><em>objectiveFunction</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mutateur définissant la fonction objective. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">objectiveFunction</td><td>La nouvelle fonction objective.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a class="code hl_struct" href="struct_d_e_parameters.html">DEParameters</a> params;</div>
+<div class="line">params.<a class="code hl_function" href="struct_d_e_parameters.html#a1005e4cfc1f54c32ae173121fcbc82d8">setObjectiveFunction</a>(myObjectiveFunction);</div>
+<div class="ttc" id="astruct_d_e_parameters_html_a1005e4cfc1f54c32ae173121fcbc82d8"><div class="ttname"><a href="struct_d_e_parameters.html#a1005e4cfc1f54c32ae173121fcbc82d8">DEParameters::setObjectiveFunction</a></div><div class="ttdeci">void setObjectiveFunction(ObjectiveFunction objectiveFunction)</div><div class="ttdoc">Mutateur définissant la fonction objective.</div><div class="ttdef"><b>Definition</b> DEParameters.cpp:116</div></div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="ae52e193acd346b239251f6ea4f1cf9b1" name="ae52e193acd346b239251f6ea4f1cf9b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae52e193acd346b239251f6ea4f1cf9b1">&#9670;&#160;</a></span>setPopulationSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DEParameters::setPopulationSize </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>populationSize</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mutateur définissant la taille de la population. </p>
+<p>La taille de la population est bornée dans l'intervalle [4, 500].</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">populationSize</td><td>La nouvelle taille de la population.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a class="code hl_struct" href="struct_d_e_parameters.html">DEParameters</a> params;</div>
+<div class="line">params.<a class="code hl_function" href="struct_d_e_parameters.html#ae52e193acd346b239251f6ea4f1cf9b1">setPopulationSize</a>(200);</div>
+<div class="ttc" id="astruct_d_e_parameters_html_ae52e193acd346b239251f6ea4f1cf9b1"><div class="ttname"><a href="struct_d_e_parameters.html#ae52e193acd346b239251f6ea4f1cf9b1">DEParameters::setPopulationSize</a></div><div class="ttdeci">void setPopulationSize(size_t populationSize)</div><div class="ttdoc">Mutateur définissant la taille de la population.</div><div class="ttdef"><b>Definition</b> DEParameters.cpp:96</div></div>
+</div><!-- fragment --> 
+</div>
+</div>
+<h2 class="groupheader">Documentation des données membres</h2>
+<a id="ae53fa81aefc4a2ae158782ec619592b1" name="ae53fa81aefc4a2ae158782ec619592b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae53fa81aefc4a2ae158782ec619592b1">&#9670;&#160;</a></span>mCR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double DEParameters::mCR</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Taux de croisement. </p>
+
+</div>
+</div>
+<a id="a872f3f88445c4d421cb8c68adf59ee44" name="a872f3f88445c4d421cb8c68adf59ee44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a872f3f88445c4d421cb8c68adf59ee44">&#9670;&#160;</a></span>mDefaultFitnessFunction</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="group___d_e_types.html#ga826047d57b14bf962f395869707a14b7">FitnessFunction</a> DEParameters::mDefaultFitnessFunction { Fitness::identity }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Fonction de fitness par défaut : fonction identité. </p>
+
+</div>
+</div>
+<a id="ad6f48d7d6019efae7e8611ac0242ba95" name="ad6f48d7d6019efae7e8611ac0242ba95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6f48d7d6019efae7e8611ac0242ba95">&#9670;&#160;</a></span>mDomain</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_d_e_domain.html">DEDomain</a> DEParameters::mDomain</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Domaine utilisé pour l'algorithme. </p>
+
+</div>
+</div>
+<a id="ae797fe510fd45a4eef27f333f47dfa9d" name="ae797fe510fd45a4eef27f333f47dfa9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae797fe510fd45a4eef27f333f47dfa9d">&#9670;&#160;</a></span>mF</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double DEParameters::mF</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Facteur de différentiation. </p>
+
+</div>
+</div>
+<a id="afd61a9adfe679ba627d67cea65da3c1d" name="afd61a9adfe679ba627d67cea65da3c1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd61a9adfe679ba627d67cea65da3c1d">&#9670;&#160;</a></span>mFitnessFunction</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___d_e_types.html#ga826047d57b14bf962f395869707a14b7">FitnessFunction</a> DEParameters::mFitnessFunction</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Fonction de fitness pour l'évaluation. </p>
+
+</div>
+</div>
+<a id="ae919b29875d62cd149bdb05be891e5e9" name="ae919b29875d62cd149bdb05be891e5e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae919b29875d62cd149bdb05be891e5e9">&#9670;&#160;</a></span>mMaxGenerationCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t DEParameters::mMaxGenerationCount</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Nombre maximal de générations. </p>
+
+</div>
+</div>
+<a id="ac47fa73becdcaa9609b207d10ef005a2" name="ac47fa73becdcaa9609b207d10ef005a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac47fa73becdcaa9609b207d10ef005a2">&#9670;&#160;</a></span>mObjectiveFunction</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___d_e_types.html#gaa1bb3938ff22df1e54e01ab1839a5468">ObjectiveFunction</a> DEParameters::mObjectiveFunction</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Fonction objective pour l'évaluation. </p>
+
+</div>
+</div>
+<a id="af1878ae8bba88d2a507dc1ef7d688f89" name="af1878ae8bba88d2a507dc1ef7d688f89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1878ae8bba88d2a507dc1ef7d688f89">&#9670;&#160;</a></span>mPopulationSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t DEParameters::mPopulationSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Taille de la population. </p>
+
+</div>
+</div>
+<a id="a7f32c4f8ff72b7b859003e4112296e2e" name="a7f32c4f8ff72b7b859003e4112296e2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f32c4f8ff72b7b859003e4112296e2e">&#9670;&#160;</a></span>smDefaultCR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double DEParameters::smDefaultCR { (<a class="el" href="struct_d_e_parameters.html#af254e642806192c9542b61823fefd3ec">smMinCR</a> + <a class="el" href="struct_d_e_parameters.html#a22a9a224920ef67435a88bab904f86de">smMaxCR</a>) / 2.0 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Taux de crossover par défaut : la valeur médiane de l'intervalle min et max. </p>
+
+</div>
+</div>
+<a id="a43034e6690cd64f7869172e4b36dd45c" name="a43034e6690cd64f7869172e4b36dd45c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43034e6690cd64f7869172e4b36dd45c">&#9670;&#160;</a></span>smDefaultF</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double DEParameters::smDefaultF { (<a class="el" href="struct_d_e_parameters.html#a4dbad86746c44c1ebc58cfba3ec4f22c">smMinF</a> + <a class="el" href="struct_d_e_parameters.html#a4d7f284f8dce5cccdf2d1833158021bc">smMaxF</a>) / 2.0 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Facteur de différentiation par défaut : la valeur médiane de l'intervalle min et max. </p>
+
+</div>
+</div>
+<a id="a8030b8093aca32e0ef2fd935fe03e41c" name="a8030b8093aca32e0ef2fd935fe03e41c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8030b8093aca32e0ef2fd935fe03e41c">&#9670;&#160;</a></span>smDefaultMaxGenerationCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t DEParameters::smDefaultMaxGenerationCount { 250 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Nombre de générations par défaut : 250. </p>
+
+</div>
+</div>
+<a id="acf5ca1ef9aaa6a7a6a648239fdf2222b" name="acf5ca1ef9aaa6a7a6a648239fdf2222b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf5ca1ef9aaa6a7a6a648239fdf2222b">&#9670;&#160;</a></span>smDefaultPopulationSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t DEParameters::smDefaultPopulationSize { 25 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Taille de la population par défaut : 25. </p>
+
+</div>
+</div>
+<a id="a22a9a224920ef67435a88bab904f86de" name="a22a9a224920ef67435a88bab904f86de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22a9a224920ef67435a88bab904f86de">&#9670;&#160;</a></span>smMaxCR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double DEParameters::smMaxCR { 1.0 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Taux de crossover maximum : 1. </p>
+
+</div>
+</div>
+<a id="a4d7f284f8dce5cccdf2d1833158021bc" name="a4d7f284f8dce5cccdf2d1833158021bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d7f284f8dce5cccdf2d1833158021bc">&#9670;&#160;</a></span>smMaxF</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double DEParameters::smMaxF { 2.0 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Facteur de différentiation maximum : 2. </p>
+
+</div>
+</div>
+<a id="a18c54e84c14c6e0194915a286019ef6b" name="a18c54e84c14c6e0194915a286019ef6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18c54e84c14c6e0194915a286019ef6b">&#9670;&#160;</a></span>smMaxMaxGenerationCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t DEParameters::smMaxMaxGenerationCount { 10000 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Nombre maximal de générations : 10000. </p>
+
+</div>
+</div>
+<a id="a0affce2fd52c32496ec64fe7dd489636" name="a0affce2fd52c32496ec64fe7dd489636"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0affce2fd52c32496ec64fe7dd489636">&#9670;&#160;</a></span>smMaxPopulationSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t DEParameters::smMaxPopulationSize { 500 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Taille maximale de la population : 500. </p>
+
+</div>
+</div>
+<a id="af254e642806192c9542b61823fefd3ec" name="af254e642806192c9542b61823fefd3ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af254e642806192c9542b61823fefd3ec">&#9670;&#160;</a></span>smMinCR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double DEParameters::smMinCR { 0.0 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Taux de crossover minimum : 0. </p>
+
+</div>
+</div>
+<a id="a4dbad86746c44c1ebc58cfba3ec4f22c" name="a4dbad86746c44c1ebc58cfba3ec4f22c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dbad86746c44c1ebc58cfba3ec4f22c">&#9670;&#160;</a></span>smMinF</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double DEParameters::smMinF { 0.0 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Facteur de différentiation minimum : 0. </p>
+
+</div>
+</div>
+<a id="a8161b993f554df94174d5f0ed64d99f7" name="a8161b993f554df94174d5f0ed64d99f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8161b993f554df94174d5f0ed64d99f7">&#9670;&#160;</a></span>smMinMaxGenerationCount</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t DEParameters::smMinMaxGenerationCount { 10 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Nombre minimal de générations : 10. </p>
+
+</div>
+</div>
+<a id="a7e6bca4623946901d1d067629190c6af" name="a7e6bca4623946901d1d067629190c6af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e6bca4623946901d1d067629190c6af">&#9670;&#160;</a></span>smMinPopulationSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const size_t DEParameters::smMinPopulationSize { 4 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Taille minimale de la population : 4. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>
