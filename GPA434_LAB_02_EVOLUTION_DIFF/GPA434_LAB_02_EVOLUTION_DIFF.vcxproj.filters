@@ -79,6 +79,12 @@
       <Filter>Fichiers sources\DE</Filter>
     </ClCompile>
     <ClCompile Include="DEPopulation.cpp">
+      <Filter>Fichiers sources\DE</Filter>
+    </ClCompile>
+    <ClCompile Include="DEParameters.cpp">
+      <Filter>Fichiers sources\DE</Filter>
+    </ClCompile>
+    <ClCompile Include="DifferentialEvolution.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>
@@ -119,7 +125,13 @@
     <ClInclude Include="DEStatistics.h">
       <Filter>Fichiers d%27en-tête\DE</Filter>
     </ClInclude>
+    <ClInclude Include="DEParameters.h">
+      <Filter>Fichiers d%27en-tête\DE</Filter>
+    </ClInclude>
     <ClInclude Include="DEPopulation.h">
+      <Filter>Fichiers d%27en-tête\DE</Filter>
+    </ClInclude>
+    <ClInclude Include="DifferentialEvolution.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
   </ItemGroup>

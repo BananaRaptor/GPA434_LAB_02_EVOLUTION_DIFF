@@ -16,7 +16,7 @@ public :
 
 	DEPopulation(DEPopulation const& other) = default;
 	DEPopulation& operator=(const DEPopulation& other) = default;
-	DEPopulation(DEPopulation&& other) noexcept = default;
+	DEPopulation(DEPopulation&& other) = default;
 
 	~DEPopulation() = default;
 

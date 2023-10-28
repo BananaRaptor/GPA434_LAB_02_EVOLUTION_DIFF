@@ -17,7 +17,7 @@ public:
 
 	~DEDomain() = default;
 
-	bool isDefined();
+	bool isDefined() const;
 	size_t size() const;
 	void resize(size_t size);
 	void setAllIntervals(double lower, double higher);

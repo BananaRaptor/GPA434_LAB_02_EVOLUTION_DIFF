@@ -1,6 +1,6 @@
 #include "DEDomain.h"
 
-bool DEDomain::isDefined()
+bool DEDomain::isDefined() const
 {
 	return !mInterval.empty();
 }

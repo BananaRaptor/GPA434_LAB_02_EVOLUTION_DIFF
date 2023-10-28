@@ -1,4 +1,6 @@
 #include "DESolution.h"
+using real = double;
+#include <string>
 
 DESolution::DESolution(size_t size)
 {
@@ -18,13 +20,13 @@ size_t DESolution::size()
 	return mData.size();
 }
 
-double DESolution::objectiveValue() const
+real DESolution::objectiveValue() const
 {
 	return mObjectiveValue;
 }
 
 
-double DESolution::fitnessValue() const
+real DESolution::fitnessValue() const
 {
 	return mFitnessValue;
 }
@@ -68,10 +70,23 @@ void DESolution::randomize(DEDomain const& domain)
 	}
 }
 
-void DESolution::evaluate(double(*objectiveFunction)(std::vector<double>), double(*fitnessFunction)(std::vector<double>))
+void DESolution::evaluate(real(*objectiveFunction)(std::vector<real>), real(*fitnessFunction)(std::vector<real>))
 {
 	mObjectiveValue = objectiveFunction(mData);
 	mFitnessValue = fitnessFunction(mData);
+}
+
+DESolution DESolution::operator-() const
+{
+	DESolution temp = DESolution(mData.size());
+
+	for (size_t i = 0; i < mData.size(); i++)
+	{
+		temp[i];
+		temp[i] = -mData[i];
+	}
+
+	return temp;
 }
 
 DESolution DESolution::operator-(DESolution solution) const
@@ -119,34 +134,49 @@ std::string DESolution::toString() const
 	return smPrefixNotation ;
 }
 
-size_t fixedNotationPrecision()
+size_t DESolution::fixedNotationPrecision()
 {
 	return smFixedNotationPrecision;
 }
 
-std::string prefixNotation()
+std::string DESolution::prefixNotation()
 {
 	return smPrefixNotation;
 }
 
-std::string seperatorNotation()
+std::string DESolution::seperatorNotation()
 {
 	return smSeparatorNotation;
 }
 
-std::string suffixNotation()
+std::string DESolution::suffixNotation()
 {
 	return smSuffixNotation;
 }
 
-void setFixedNotationPrecision(size_t precision)
+void DESolution::setFixedNotationPrecision(size_t precision)
 {
 	smFixedNotationPrecision = precision;
 }
 
-void setNotationFormat(std::string& prefix, std::string& separator, std::string& suffix)
+void DESolution::setNotationFormat(std::string& prefix, std::string& separator, std::string& suffix)
 {
 	smPrefixNotation = prefix;
 	smSeparatorNotation = separator;
 	smSuffixNotation = suffix;
 }
+DESolution operator*(real lhs, DESolution const& rhs)
+{
+	DESolution temp = rhs;
+	for (size_t i = 0; i < rhs.mData.size(); i++)
+	{
+		temp.mData[i] = rhs.mData[i] * lhs;
+	}
+	return temp;
+}
+std::ostream& operator<<(std::ostream& lhs, DESolution const& rhs)
+{
+	 lhs << rhs.toString();
+	 return lhs;
+}
+

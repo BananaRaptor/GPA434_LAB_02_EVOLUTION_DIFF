@@ -131,9 +131,11 @@
     <ClCompile Include="CircleFittingProblem.cpp" />
     <ClCompile Include="Console.cpp" />
     <ClCompile Include="DEDomain.cpp" />
+    <ClCompile Include="DEParameters.cpp" />
     <ClCompile Include="DEPopulation.cpp" />
     <ClCompile Include="DESolution.cpp" />
     <ClCompile Include="DEStatistics.cpp" />
+    <ClCompile Include="DifferentialEvolution.cpp" />
     <ClCompile Include="ExtremumFunctionProblem.cpp" />
     <ClCompile Include="Fitness.cpp" />
     <ClCompile Include="Interval.cpp" />
@@ -147,9 +149,11 @@
     <ClInclude Include="CircleFittingProblem.h" />
     <ClInclude Include="Console.h" />
     <ClInclude Include="DEDomain.h" />
+    <ClInclude Include="DEParameters.h" />
     <ClInclude Include="DEPopulation.h" />
     <ClInclude Include="DESolution.h" />
     <ClInclude Include="DEStatistics.h" />
+    <ClInclude Include="DifferentialEvolution.h" />
     <ClInclude Include="ExtremumFunctionProblem.h" />
     <ClInclude Include="Fitness.h" />
     <ClInclude Include="Interval.h" />
