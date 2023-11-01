@@ -17,9 +17,9 @@ void DEDomain::resize(size_t size)
 
 void DEDomain::setAllIntervals(double lower, double higher)
 {
-	for (Interval interval : mInterval) 
+	for (size_t i = 0; i < mInterval.size() ; i++ )
 	{
-		interval.set(lower, higher);
+		mInterval[i].set(lower, higher);
 	}
 }
 

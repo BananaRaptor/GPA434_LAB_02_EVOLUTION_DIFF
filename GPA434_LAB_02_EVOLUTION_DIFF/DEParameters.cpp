@@ -1,13 +1,19 @@
 #include "DEParameters.h"
 
 
-double defaultFitness(std::vector<real> values) {
-	return values[0];
+const size_t DEParameters::smMinPopulationSize = 4;
+const size_t DEParameters::smMinMaxGenerationCount = 10;
+const size_t DEParameters::smMaxPopulationSize = 500;
+const size_t DEParameters::smMaxMaxGenerationCount = 10000;
+const size_t DEParameters::smDefaultPopulationSize = 25;
+const size_t DEParameters::smDefaultMaxGenerationCount = 250;
+
+double defaultFitness(DESolution const& solution) {
+	return solution[0];
 }
 
-
-static const DEParameters::FitnessFunction mDefaultFitnessFunction{Fitness::identity};
-static const DEParameters::ObjectiveFunction mDefaultObjectiveFunction {defaultFitness};
+const DEParameters::FitnessFunction DEParameters::mDefaultFitnessFunction{Fitness::identity};
+const DEParameters::ObjectiveFunction DEParameters::mDefaultObjectiveFunction {defaultFitness};
 
 DEParameters::DEParameters():
 	DEParameters(DEDomain(), smDefaultPopulationSize, smDefaultF, smDefaultCR, smDefaultMaxGenerationCount, mDefaultObjectiveFunction, mDefaultFitnessFunction)
@@ -27,7 +33,13 @@ mFitnessFunction{fitnessFunction}
 
 bool DEParameters::isReady() const
 {
-	return false;
+	return (mDomain.isDefined()
+		&& mPopulationSize		> smMinPopulationSize			&&	mPopulationSize		< smMaxPopulationSize
+		&& mF					> smMinF						&&	mF					< smMaxF
+		&& mCR					> smMinCR						&&	mCR					< smMaxCR
+		&& mMaxGenerationCount  > smMinMaxGenerationCount		&& mMaxGenerationCount	< smMaxMaxGenerationCount
+		&& mObjectiveFunction	!= NULL
+		&& mFitnessFunction		!= NULL);
 }
 
 DEDomain DEParameters::domain() const

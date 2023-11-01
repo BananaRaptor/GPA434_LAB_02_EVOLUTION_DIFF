@@ -5,10 +5,13 @@
 #include <format>
 #include "DEDomain.h"
 #include "DEDomain.h"
+#include <functional>
 
 class DESolution
 {
 using real = double;
+using FitnessFunction = std::function<real(real)>;
+using ObjectiveFunction = std::function<real(DESolution const&)>;
 private:
 	std::vector<real> mData;
 	real mObjectiveValue;
@@ -32,14 +35,14 @@ public:
 	size_t size();
 	real objectiveValue() const;
 	real fitnessValue() const;
-	size_t& operator[] (size_t index);
-	const size_t operator[] (size_t index) const;
+	real& operator[] (size_t index);
+	const real operator[] (size_t index) const;
 
 
 	void setZero();
 	void setup(DEDomain const& domain);
 	void randomize(DEDomain const& domain);
-	void evaluate(real (*objectiveFunction)(std::vector<real>), real (*fitnessFunction)(std::vector<real>));
+	void evaluate(ObjectiveFunction, FitnessFunction);
 	DESolution operator- () const;
 	DESolution operator- (DESolution solution) const;
 	DESolution operator+ (DESolution solution) const;

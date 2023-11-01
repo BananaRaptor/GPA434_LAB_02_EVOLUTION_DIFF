@@ -3,6 +3,7 @@
 #include "DEPopulation.h"
 #include "DEStatistics.h"
 #include "ThreeSamplesWithOneExclusion.h"
+#include "Random.h"
 
 class DifferentialEvolution
 {
@@ -15,6 +16,15 @@ private:
 	DEPopulation mT;
 	DEStatistics mStatistics;
 	ThreeSamplesWithOneExclusion mSamplingTool;
+
+	size_t randomR();
+	static real randomCR();
+	void processFitness(DEPopulation& population);
+	void processMutation();
+	void processCrossover();
+	void processSelection();
+	void processStatistics();
+	void evolveOne();
 
 public:
 	DifferentialEvolution();
@@ -33,13 +43,6 @@ public:
 	void setup(DEParameters const& parameters);
 	void reset();
 	bool evolve();
-	size_t randomR();
-	static real randomCR();
-	void processFitness(DEPopulation& population);
-	void processMutation();
-	void processCrossover();
-	void processSelection();
-	void processStatistics();
-	void evolveOne();
+	
 };
 

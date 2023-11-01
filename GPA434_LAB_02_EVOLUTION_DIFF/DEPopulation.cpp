@@ -6,7 +6,7 @@ DESolution DEPopulation::bestSolution() const
     tempValue = DESolution(size());
     for (size_t i = 0; i < mData.size(); i++)
     {
-        if (mData.at(i).objectiveValue() > tempValue.objectiveValue()) {
+        if (mData.at(i).fitnessValue() > tempValue.fitnessValue()) {
             tempValue = mData.at(i);
         }
     }

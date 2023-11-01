@@ -2,6 +2,12 @@
 using real = double;
 #include <string>
 
+size_t DESolution::smFixedNotationPrecision = 2;
+std::string DESolution::smPrefixNotation = "Valeur : ";
+std::string DESolution::smSeparatorNotation  = " , ";
+std::string DESolution::smSuffixNotation = " . ";
+
+
 DESolution::DESolution(size_t size)
 {
 	mData.resize(size);
@@ -31,15 +37,14 @@ real DESolution::fitnessValue() const
 	return mFitnessValue;
 }
 
-size_t& DESolution::operator[](size_t index)
+real& DESolution::operator[](size_t index)
 {
-	size_t temp = mData.at(index);
-	return temp;
+	return mData.at(index);
 }
 
 
 
-const size_t DESolution::operator[](size_t index) const
+const real DESolution::operator[](size_t index) const
 {
 	return mData.at(index);
 }
@@ -70,10 +75,11 @@ void DESolution::randomize(DEDomain const& domain)
 	}
 }
 
-void DESolution::evaluate(real(*objectiveFunction)(std::vector<real>), real(*fitnessFunction)(std::vector<real>))
+void DESolution::evaluate(DESolution::ObjectiveFunction objectiveFunction, DESolution::FitnessFunction fitnessFunction)
 {
-	mObjectiveValue = objectiveFunction(mData);
-	mFitnessValue = fitnessFunction(mData);
+	double aaaaa = objectiveFunction(*this);
+	mObjectiveValue = aaaaa;
+	mFitnessValue = fitnessFunction(mObjectiveValue);
 }
 
 DESolution DESolution::operator-() const
@@ -130,8 +136,12 @@ DESolution DESolution::operator*(DESolution solution) const
 
 std::string DESolution::toString() const
 {
-	//TODO : 
-	return smPrefixNotation ;
+	std::string test = smPrefixNotation;
+	for (real data : mData)
+	{
+		test += std::to_string(data) + smSeparatorNotation;
+	}
+	return test + smSuffixNotation;
 }
 
 size_t DESolution::fixedNotationPrecision()

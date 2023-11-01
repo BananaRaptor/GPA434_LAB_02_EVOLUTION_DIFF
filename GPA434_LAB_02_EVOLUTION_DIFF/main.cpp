@@ -1,24 +1,37 @@
 #include "DEDomain.h"
 #include "DEStatistics.h"
 #include "DEPopulation.h"
+#include "DEParameters.h"
+#include "DifferentialEvolution.h"
+#include "DESolution.h"
 #include "Console.h"
 #include <string>
 #include <iostream>
 #include <vector>
 
-double objectiveFunction(std::vector<double> value) {
-	return value.at(0) + 2 * value.at(1) + 3 * value.at(2);
+using real = double;
+using FitnessFunction = std::function<real(real)>;
+using ObjectiveFunction = std::function<real(DESolution const&)>;
+
+
+double objectiveFunction(DESolution const& solution) {
+	double test = solution[0] + (double)2.0 * solution[1] + (double)3.0 * solution[2];
+	return test;
 }
 
-double fitnessFunction(std::vector<double> value) {
-	return value[0] / 2;
-
+double fitnessFunction(double value) {
+	double test =value * (double)150.000;
+	return test;
+}
+std::string convertToString(char* a)
+{
+	std::string  s(a);
+	return s;
 }
 
 int main() {
-	DEDomain domain = DEDomain();
 
-	std::cout << domain.isDefined() << "\n";
+	DEDomain domain = DEDomain();
 
 	domain.resize(3);
 
@@ -26,17 +39,21 @@ int main() {
 
 	domain[2].set(0, 2);
 
-	DEPopulation test;
+	DEParameters parameter = DEParameters(domain,100, 1,0.40, 50,  objectiveFunction, fitnessFunction);
 
-	test.setup(domain.size(), domain);
-
-	test.randomize(domain);
-
-	for (size_t i = 0; i < test.size(); i++)
-	{
-		test[i].evaluate(objectiveFunction, fitnessFunction);
+	DifferentialEvolution de = DifferentialEvolution();
+	de.setup(parameter);
+	
+	if (de.isReadyToEvolve()) {
+		de.evolve();
 	}
-	std::cout << test.bestSolution().objectiveValue() << " test done";
+	std::string prefix = "La meilleure valeur est : ";
+	std::string separator = " , ";
+	std::string suffix = ". FINI !!!!";
 
+	DESolution::setNotationFormat(prefix, separator, suffix);
+	DESolution::setFixedNotationPrecision(3);
+
+	std::cout << de.bestSolution().toString();
 
 }
