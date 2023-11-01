@@ -138,11 +138,14 @@
     <ClCompile Include="DifferentialEvolution.cpp" />
     <ClCompile Include="ExtremumFunctionProblem.cpp" />
     <ClCompile Include="Fitness.cpp" />
+    <ClCompile Include="GPA434Lab2.cpp" />
     <ClCompile Include="Interval.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="OpenBoxProblem.cpp" />
+    <ClCompile Include="OpenBoxSolver.cpp" />
     <ClCompile Include="ProblemToSolve.cpp" />
     <ClCompile Include="Random.cpp" />
+    <ClCompile Include="Solver.cpp" />
     <ClCompile Include="ThreeSamplesWithOneExclusion.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -156,10 +159,13 @@
     <ClInclude Include="DifferentialEvolution.h" />
     <ClInclude Include="ExtremumFunctionProblem.h" />
     <ClInclude Include="Fitness.h" />
+    <ClInclude Include="GPA434Lab2.h" />
     <ClInclude Include="Interval.h" />
     <ClInclude Include="OpenBoxProblem.h" />
+    <ClInclude Include="OpenBoxSolver.h" />
     <ClInclude Include="ProblemToSolve.h" />
     <ClInclude Include="Random.h" />
+    <ClInclude Include="Solver.h" />
     <ClInclude Include="ThreeSamplesWithOneExclusion.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

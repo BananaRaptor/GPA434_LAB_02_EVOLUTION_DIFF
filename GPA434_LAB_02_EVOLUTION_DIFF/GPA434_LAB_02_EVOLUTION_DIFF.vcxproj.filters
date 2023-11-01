@@ -84,8 +84,17 @@
     <ClCompile Include="DEParameters.cpp">
       <Filter>Fichiers sources\DE</Filter>
     </ClCompile>
-    <ClCompile Include="DifferentialEvolution.cpp">
+    <ClCompile Include="GPA434Lab2.cpp">
       <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Solver.cpp">
+      <Filter>Fichiers sources\Solver</Filter>
+    </ClCompile>
+    <ClCompile Include="DifferentialEvolution.cpp">
+      <Filter>Fichiers sources\DE</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenBoxSolver.cpp">
+      <Filter>Fichiers sources\Solver</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -131,8 +140,17 @@
     <ClInclude Include="DEPopulation.h">
       <Filter>Fichiers d%27en-tête\DE</Filter>
     </ClInclude>
-    <ClInclude Include="DifferentialEvolution.h">
+    <ClInclude Include="GPA434Lab2.h">
       <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Solver.h">
+      <Filter>Fichiers d%27en-tête\Solver</Filter>
+    </ClInclude>
+    <ClInclude Include="DifferentialEvolution.h">
+      <Filter>Fichiers d%27en-tête\DE</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenBoxSolver.h">
+      <Filter>Fichiers d%27en-tête\Solver</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
