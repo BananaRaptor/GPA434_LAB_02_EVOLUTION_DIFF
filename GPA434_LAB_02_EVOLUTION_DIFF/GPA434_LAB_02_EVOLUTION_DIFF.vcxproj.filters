@@ -96,6 +96,12 @@
     <ClCompile Include="OpenBoxSolver.cpp">
       <Filter>Fichiers sources\Solver</Filter>
     </ClCompile>
+    <ClCompile Include="ExtremumSolver.cpp">
+      <Filter>Fichiers sources\Solver</Filter>
+    </ClCompile>
+    <ClCompile Include="CircleSolver.cpp">
+      <Filter>Fichiers sources\Solver</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Console.h">
@@ -150,6 +156,12 @@
       <Filter>Fichiers d%27en-tête\DE</Filter>
     </ClInclude>
     <ClInclude Include="OpenBoxSolver.h">
+      <Filter>Fichiers d%27en-tête\Solver</Filter>
+    </ClInclude>
+    <ClInclude Include="ExtremumSolver.h">
+      <Filter>Fichiers d%27en-tête\Solver</Filter>
+    </ClInclude>
+    <ClInclude Include="CircleSolver.h">
       <Filter>Fichiers d%27en-tête\Solver</Filter>
     </ClInclude>
   </ItemGroup>

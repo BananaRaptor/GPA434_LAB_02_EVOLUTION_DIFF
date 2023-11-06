@@ -15,6 +15,11 @@ DESolution Solver::bestSolution() const
 	return mDE.bestSolution();
 }
 
+DESolution Solver::secondBestSolution() const
+{
+	return mDE.secondBestSolutionWithOppositeValue();
+}
+
 void Solver::solve()
 {
 	mDE.reset();

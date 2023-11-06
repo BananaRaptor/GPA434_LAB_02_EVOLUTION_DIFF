@@ -4,13 +4,17 @@
 #include "Console.h"
 #include "Solver.h"
 #include "OpenBoxSolver.h"
+#include "ExtremumSolver.h"
+#include "CircleSolver.h"
 #include "ProblemToSolve.h"
 #include "Fitness.h"
+
 class GPA434Lab2
 {
 private:
 	bool userRequestedOut;
 	Solver problemSolver;
+	bool multipleAnswer;
 
 
 	void mainLoop();

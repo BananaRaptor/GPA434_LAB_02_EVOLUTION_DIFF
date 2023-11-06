@@ -16,7 +16,21 @@ DESolution DEStatistics::bestSolution() const
 
     for (size_t i = 0; i < mStatistics.size(); i++)
     {
-        if (mStatistics.at(i).objectiveValue() > bestValue.objectiveValue()) {
+        if (mStatistics.at(i).fitnessValue() > bestValue.fitnessValue()) {
+            bestValue = mStatistics.at(i);
+        }
+    }
+
+    return bestValue;
+}
+
+DESolution DEStatistics::secondBestSolutionWithOppositeValue(DESolution bestSolution) const
+{
+    DESolution bestValue = DESolution();
+
+    for (size_t i = 0; i < mStatistics.size(); i++)
+    {
+        if (mStatistics.at(i).fitnessValue() > bestValue.fitnessValue() && (bestSolution.objectiveValue() < 0) != (mStatistics.at(i).objectiveValue() < 0)) {
             bestValue = mStatistics.at(i);
         }
     }

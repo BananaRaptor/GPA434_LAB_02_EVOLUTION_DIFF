@@ -4,7 +4,8 @@
 
 GPA434Lab2::GPA434Lab2():
 	userRequestedOut{0},
-	problemSolver{Solver()}
+	problemSolver{Solver()},
+	multipleAnswer{false}
 {
 	mainLoop();
 }
@@ -48,6 +49,16 @@ void GPA434Lab2::chooseProblem()
 	{
 	case 1 : 
 		problemSolver = OpenBoxSolver();
+		multipleAnswer = false;
+		break;
+	case 2:
+		problemSolver = ExtremumSolver();
+		multipleAnswer = true;
+		break;
+	case 3:
+		problemSolver = CircleSolver();
+		multipleAnswer = false;
+		break;
 	default:
 		break;
 	}
@@ -58,6 +69,10 @@ void GPA434Lab2::solveProblem()
 	std::cout << problemSolver.problemPresentation();
 	std::cout << " Resolution en cours     ";
 	problemSolver.solve();
-	std::cout << " Reslution Termine \n ";
+	std::cout << " Resolution Termine \n ";
 	std::cout << problemSolver.bestSolution().toString();
+	if (multipleAnswer) 
+	{
+		std::cout << problemSolver.secondBestSolution().toString();
+	}
 }

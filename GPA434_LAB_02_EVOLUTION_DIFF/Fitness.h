@@ -1,5 +1,5 @@
 #pragma once
-
+#include <cmath>
 
 //! \class Fitness
 //! 
@@ -70,4 +70,6 @@ public:
 	//! double result { fitness(-10.0) }; // result = 10.0
 	//! \endcode
 	static double opposite(double value);
+
+	static double distance(double value);
 };

@@ -3,9 +3,9 @@ using real = double;
 #include <string>
 
 size_t DESolution::smFixedNotationPrecision = 2;
-std::string DESolution::smPrefixNotation = "Valeur : ";
+std::string DESolution::smPrefixNotation = "Parametres : ";
 std::string DESolution::smSeparatorNotation  = " , ";
-std::string DESolution::smSuffixNotation = " . ";
+std::string DESolution::smSuffixNotation = " et une valeur de la fonction objective de : ";
 
 
 DESolution::DESolution(size_t size)
@@ -141,7 +141,8 @@ std::string DESolution::toString() const
 	{
 		test += std::to_string(data) + smSeparatorNotation;
 	}
-	return test + smSuffixNotation;
+	test += smSuffixNotation + std::to_string(objectiveValue()) + "\n";
+	return test;
 }
 
 size_t DESolution::fixedNotationPrecision()

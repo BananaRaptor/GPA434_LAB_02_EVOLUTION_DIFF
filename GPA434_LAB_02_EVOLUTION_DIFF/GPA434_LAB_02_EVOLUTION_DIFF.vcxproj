@@ -129,6 +129,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CircleFittingProblem.cpp" />
+    <ClCompile Include="CircleSolver.cpp" />
     <ClCompile Include="Console.cpp" />
     <ClCompile Include="DEDomain.cpp" />
     <ClCompile Include="DEParameters.cpp" />
@@ -137,6 +138,7 @@
     <ClCompile Include="DEStatistics.cpp" />
     <ClCompile Include="DifferentialEvolution.cpp" />
     <ClCompile Include="ExtremumFunctionProblem.cpp" />
+    <ClCompile Include="ExtremumSolver.cpp" />
     <ClCompile Include="Fitness.cpp" />
     <ClCompile Include="GPA434Lab2.cpp" />
     <ClCompile Include="Interval.cpp" />
@@ -150,6 +152,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CircleFittingProblem.h" />
+    <ClInclude Include="CircleSolver.h" />
     <ClInclude Include="Console.h" />
     <ClInclude Include="DEDomain.h" />
     <ClInclude Include="DEParameters.h" />
@@ -158,6 +161,7 @@
     <ClInclude Include="DEStatistics.h" />
     <ClInclude Include="DifferentialEvolution.h" />
     <ClInclude Include="ExtremumFunctionProblem.h" />
+    <ClInclude Include="ExtremumSolver.h" />
     <ClInclude Include="Fitness.h" />
     <ClInclude Include="GPA434Lab2.h" />
     <ClInclude Include="Interval.h" />

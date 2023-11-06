@@ -14,3 +14,8 @@ double Fitness::opposite(double value)
 {
     return -value;
 }
+
+double Fitness::distance(double value)
+{
+    return  abs(value - 0);
+}

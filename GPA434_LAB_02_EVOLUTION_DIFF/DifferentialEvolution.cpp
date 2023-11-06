@@ -36,6 +36,11 @@ DESolution DifferentialEvolution::bestSolution() const
 	return mStatistics.bestSolution();
 }
 
+DESolution DifferentialEvolution::secondBestSolutionWithOppositeValue() const
+{
+	return mStatistics.secondBestSolutionWithOppositeValue(mStatistics.bestSolution());
+}
+
 void DifferentialEvolution::setup(DEParameters const& parameters)
 {
 	mParameters = parameters;

@@ -9,7 +9,7 @@ OpenBoxSolver::OpenBoxSolver():
 	DEDomain domain = DEDomain();
 	domain.resize(1);
 	domain.setAllIntervals(0, OpenBoxProblem::boxHeight());
-	mParameters = DEParameters(domain, 100, 1, 0.40 ,500 , processCall, Fitness::identity);
+	mParameters = DEParameters(domain, 100, 1, 0.35 ,500 , processCall, Fitness::identity);
 }
 
 
