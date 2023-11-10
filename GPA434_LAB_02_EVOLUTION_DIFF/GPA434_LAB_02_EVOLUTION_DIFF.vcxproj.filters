@@ -165,4 +165,7 @@
       <Filter>Fichiers d%27en-tête\Solver</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="Rapport.txt" />
+  </ItemGroup>
 </Project>

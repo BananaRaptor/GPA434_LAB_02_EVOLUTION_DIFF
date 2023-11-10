@@ -1,5 +1,8 @@
 #include "CircleSolver.h"
 
+/// <summary>
+/// Contructeur
+/// </summary>
 CircleSolver::CircleSolver():
 	mCircleProblem{CircleFittingProblem()}
 {
@@ -7,9 +10,14 @@ CircleSolver::CircleSolver():
 	DEDomain domain = DEDomain();
 	domain.resize(3);
 	domain.setAllIntervals(2, 8);
-	mParameters = DEParameters(domain, 2000, 1, 0.10, 500, processCall, Fitness::inverse);
+	mParameters = DEParameters(domain, 1000, 1, 0.20, 500, processCall, Fitness::inverse);
 }
 
+/// <summary>
+/// Fonction objective 
+/// </summary>
+/// <param name="solution">Solution à évaluer</param>
+/// <returns>La valeur objective</returns>
 real CircleSolver::process(DESolution const& solution)
 {
 	real totalDistance = 0;

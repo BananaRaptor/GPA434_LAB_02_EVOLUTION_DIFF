@@ -23,7 +23,6 @@ public :
 
 	std::string problemPresentation() const;
 	DESolution bestSolution() const;
-	DESolution secondBestSolution() const;
 	void solve();
 };
 

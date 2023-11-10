@@ -1,14 +1,19 @@
 #include "GPA434Lab2.h"
 
 
-
+/// <summary>
+/// Constuceur (Effectue egalement tout le programme principal losrsqu'il est fini tout se fais garabge collected)
+/// </summary>
 GPA434Lab2::GPA434Lab2():
 	userRequestedOut{0},
-	problemSolver{Solver()},
-	multipleAnswer{false}
+	problemSolver{Solver()}
 {
 	mainLoop();
 }
+
+/// <summary>
+/// Gere la loop principale du probleme qui gere les actions de l'utilisateur
+/// </summary>
 void GPA434Lab2::mainLoop()
 {
 	printTitle();
@@ -23,6 +28,9 @@ void GPA434Lab2::mainLoop()
 	}
 }
 
+/// <summary>
+/// Imprime le titre
+/// </summary>
 void GPA434Lab2::printTitle()
 {
 	std::cout << "   ______  _______     _        _    _    ______   _    _    \n";
@@ -36,6 +44,9 @@ void GPA434Lab2::printTitle()
 	std::cout << "Laboratoire 2 - Evolution Differentiel\n";
 }
 
+/// <summary>
+/// Affiche et gere le choix de problème à resoudre
+/// </summary>
 void GPA434Lab2::chooseProblem()
 {
 	std::cout << "Selectionner le problme a resoudre\n";
@@ -49,21 +60,21 @@ void GPA434Lab2::chooseProblem()
 	{
 	case 1 : 
 		problemSolver = OpenBoxSolver();
-		multipleAnswer = false;
 		break;
 	case 2:
 		problemSolver = ExtremumSolver();
-		multipleAnswer = true;
 		break;
 	case 3:
 		problemSolver = CircleSolver();
-		multipleAnswer = false;
 		break;
 	default:
 		break;
 	}
 }
 
+/// <summary>
+/// Résolution du probleme et affichage de la solution
+/// </summary>
 void GPA434Lab2::solveProblem()
 {
 	std::cout << problemSolver.problemPresentation();
@@ -71,8 +82,4 @@ void GPA434Lab2::solveProblem()
 	problemSolver.solve();
 	std::cout << " Resolution Termine \n ";
 	std::cout << problemSolver.bestSolution().toString();
-	if (multipleAnswer) 
-	{
-		std::cout << problemSolver.secondBestSolution().toString();
-	}
 }

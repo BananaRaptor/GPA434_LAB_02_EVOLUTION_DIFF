@@ -14,7 +14,6 @@ class GPA434Lab2
 private:
 	bool userRequestedOut;
 	Solver problemSolver;
-	bool multipleAnswer;
 
 
 	void mainLoop();
@@ -25,11 +24,6 @@ private:
 
 public :
 	GPA434Lab2();
-
-	GPA434Lab2(GPA434Lab2 const& other) = default;
-	GPA434Lab2& operator=(const GPA434Lab2& other) = default;
-	GPA434Lab2(GPA434Lab2&& other) noexcept = default;
-
 	~GPA434Lab2() = default;
 };
 

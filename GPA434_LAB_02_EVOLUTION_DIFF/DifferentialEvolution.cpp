@@ -1,5 +1,8 @@
 #include "DifferentialEvolution.h"
 
+/// <summary>
+/// Le constructeur par défault
+/// </summary>
 DifferentialEvolution::DifferentialEvolution() :
 	mParameters{DEParameters()},
 	mCurrentGeneration{0},
@@ -11,36 +14,56 @@ DifferentialEvolution::DifferentialEvolution() :
 {
 }
 
+/// <summary>
+/// Retourne les parametres
+/// </summary>
+/// <returns>Les paramtres</returns>
 DEParameters DifferentialEvolution::parameters() const
 {
 	return mParameters;
 }
 
+/// <summary>
+/// Si les parametre sont correctement configurées reourne vrai
+/// </summary>
+/// <returns>Si les parametre sont correctement configurées</returns>
 bool DifferentialEvolution::isReadyToEvolve() const
 {
 	return mParameters.isReady();
 }
 
+/// <summary>
+/// Retourne le nombre associé à la génération en cours
+/// </summary>
+/// <returns>le nombre associé à la génération en cours</returns>
 size_t DifferentialEvolution::currentGeneration() const
 {
 	return mCurrentGeneration;
 }
 
+/// <summary>
+/// Retourne vrai si nous avons atteint la taille maximum de la génération
+/// </summary>
+/// <returns>si nous avons atteint la taille maximum de la génération</returns>
 bool DifferentialEvolution::isMaximumGenerationReached() const
 {
 	return mCurrentGeneration >= mParameters.maximumGenerationCount();
 }
 
+/// <summary>
+/// Retourne la meilleur solution présente dans la liste statistiques
+/// </summary>
+/// <returns>la meilleur solution présente dans la liste statistiques</returns>
 DESolution DifferentialEvolution::bestSolution() const
 {
 	return mStatistics.bestSolution();
 }
 
-DESolution DifferentialEvolution::secondBestSolutionWithOppositeValue() const
-{
-	return mStatistics.secondBestSolutionWithOppositeValue(mStatistics.bestSolution());
-}
 
+/// <summary>
+/// Prépare les différentes population et les parametre pour commencer l'évolution différentiel
+/// </summary>
+/// <param name="parameters">Les parametres à utiliser</param>
 void DifferentialEvolution::setup(DEParameters const& parameters)
 {
 	mParameters = parameters;
@@ -51,6 +74,9 @@ void DifferentialEvolution::setup(DEParameters const& parameters)
 	mSamplingTool = ThreeSamplesWithOneExclusion(mParameters.populationSize());
 }
 
+/// <summary>
+/// Réinitialise les populations
+/// </summary>
 void DifferentialEvolution::reset()
 {
 	mX.setup(mParameters.populationSize(), mParameters.domain());
@@ -58,6 +84,10 @@ void DifferentialEvolution::reset()
 	mT.setup(mParameters.populationSize(), mParameters.domain());
 }
 
+/// <summary>
+/// Effectue l'evolution différentiel dès que le nombre de génération atteint le maximum
+/// </summary>
+/// <returns>Vrai lorsque terminé et faux si il n'était pas possible d'évoluer/returns>
 bool DifferentialEvolution::evolve()
 {
 	while (mCurrentGeneration < mParameters.maximumGenerationCount())
@@ -67,6 +97,9 @@ bool DifferentialEvolution::evolve()
 	return true;
 }
 
+/// <summary>
+/// Effectue une passe d'évolution
+/// </summary>
 void DifferentialEvolution::evolveOne()
 {
 	processMutation();
@@ -75,17 +108,28 @@ void DifferentialEvolution::evolveOne()
 	processStatistics();
 	mCurrentGeneration++;
 }
-
+/// <summary>
+/// Retourne une valeur aleatoire de R
+/// </summary>
+/// <returns>une valeur aleatoire de R</returns>
 size_t DifferentialEvolution::randomR()
 {
 	return Random::integer(0, mParameters.domain().size() - 1);
 }
 
+/// <summary>
+/// Retourne une valeur aléatoire entre 0 et 1
+/// </summary>
+/// <returns>une valeur aléatoire entre 0 et 1</returns>
 DifferentialEvolution::real DifferentialEvolution::randomCR()
 {
 	return Random::real(0, 1);
 }
 
+/// <summary>
+/// Effectue l'évaluation de la fitness des solutions
+/// </summary>
+/// <param name="population">La population à evaluer</param>
 void DifferentialEvolution::processFitness(DEPopulation& population)
 {
 	for (size_t i = 0; i < mParameters.populationSize(); i++) {
@@ -93,6 +137,9 @@ void DifferentialEvolution::processFitness(DEPopulation& population)
 	}
 }
 
+/// <summary>
+/// Effectue la passe de mutation pour l'évolution différentiel
+/// </summary>
 void DifferentialEvolution::processMutation()
 {
 	mSamplingTool.prepare(mParameters.populationSize());
@@ -113,6 +160,9 @@ void DifferentialEvolution::processMutation()
 	}
 }
 
+/// <summary>
+/// Effectue la passe de croisement pour l'évolution différentiel
+/// </summary>
 void DifferentialEvolution::processCrossover()
 {
 	for (size_t i = 0; i < mParameters.populationSize(); i++) {
@@ -131,6 +181,9 @@ void DifferentialEvolution::processCrossover()
 	}
 }
 
+/// <summary>
+/// Effectue la passe de selection pour l'évolution différentiel
+/// </summary>
 void DifferentialEvolution::processSelection()
 {
 	for (size_t i = 0; i < mParameters.populationSize(); i++) {
@@ -142,6 +195,9 @@ void DifferentialEvolution::processSelection()
 	}
 }
 
+/// <summary>
+/// Effectue l'evaltion des statistiques et determine la meilleur solution
+/// </summary>
 void DifferentialEvolution::processStatistics()
 {
 	mStatistics.reset();

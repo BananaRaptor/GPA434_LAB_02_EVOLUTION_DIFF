@@ -2,6 +2,9 @@
 
 using real = double;
 
+/// <summary>
+/// Contructeur
+/// </summary>
 OpenBoxSolver::OpenBoxSolver():
 	mOpenBoxProblem{OpenBoxProblem()}
 {
@@ -13,6 +16,11 @@ OpenBoxSolver::OpenBoxSolver():
 }
 
 
+/// <summary>
+/// Fonction objective 
+/// </summary>
+/// <param name="solution">Solution à évaluer</param>
+/// <returns>La valeur objective</returns>
 double OpenBoxSolver::process(DESolution const& solution)
 {
 	return (OpenBoxProblem::boxHeight() - 2 * solution[0]) * (OpenBoxProblem::boxWidth() - 2 * solution[0]) * solution[0];

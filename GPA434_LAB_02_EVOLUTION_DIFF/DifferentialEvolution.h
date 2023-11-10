@@ -40,7 +40,6 @@ public:
 	size_t currentGeneration() const;
 	bool isMaximumGenerationReached() const;
 	DESolution bestSolution() const;
-	DESolution secondBestSolutionWithOppositeValue() const;
 	void setup(DEParameters const& parameters);
 	void reset();
 	bool evolve();

@@ -172,6 +172,9 @@
     <ClInclude Include="Solver.h" />
     <ClInclude Include="ThreeSamplesWithOneExclusion.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="Rapport.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

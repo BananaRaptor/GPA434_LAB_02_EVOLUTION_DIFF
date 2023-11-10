@@ -1,0 +1,118 @@
+﻿1. Mettre, au début du fichier, : 1 point
+	a. Arnaud Théberge-Mandeville THEA83110007
+	b. GPA434-02 Ingénierie des systèmes orientés-objet
+	c. Laboratoire 2 : Résolution de problèmes d'ingénierie à l'aide de l’évolution différentielle
+	d. 2023-11-15
+2. Évolution différentielle 3 points
+	a.
+		i. 
+			- DifferentialEvolution : J'ai effectuer un test avec une fonction objective et de fitness bidon avec des petits population dans le main
+			- DEParameter : J'ai tester les fonctions dans le main 
+			- DEPopulation : J'ai créer 2 population avec des domaines différents dans le main 
+			- DESolution : J'ai print des solutions aléatoire apres un randomize dans le main pour tester les fonctionnalité
+			- DEDomain :  J'ai créer des domaines et effectué des fonctions resize dans le main.
+			- DEStatistics : J'ai tester les fonctions pour trouver les meilleurs solutions dans le main suite à un randomize des population.s
+			- Interval : J'ai tester les fonctions de création de min et max dans le main.
+		b.
+			1 - Les implémentations des fonction objective et de fitness. Je trouver l'utilisation de pointeur seulement, bien que possible et efficace, rendait la programmation parfois complexe.
+			J'ai donc utiliser la librairie standard functionnal pour utiliser une logique plus près de la programmation fonctionnel présente dans d'autre language.
+
+			2 - J'ai trouver les alogrithmes de l'evolution différentiel assez fastidieux à traduire en code. Notamment pour ne pas modifier l'alogrithme accidentelement.
+			J'ai pris une attention particulière lors de sa programmation et tester extensiblement.
+
+			3 - J'ai eu de la difficulté à implementer le fais que les solutions restait dans le domaine suite à une modification.
+			Je me demander précisement à quel endroit implementer la fonctionnalité. J'ai décidé d'opter pour la simplicité et de l'implementer direcement dans la fonction de mutation.
+
+3. Résolution des 3 problèmes : 6 points
+	a. 
+		i. 
+			- OpenBox :  J'ai pris de 0 à la hauteur de la boite. Puisque le hauteur est la plus petite dimensions (50),
+			- Extremum :  J'ai utiliser de -3 à 3 pour chaque paramêtre.
+			- Cercle : J'ai utiliser de 2 à 8 pour chaque paramêtre car je sais que les 2 valeurs optimales se trouvent dans l'intervalle. J'ai utiliser le même intervale pour tous les paramêtre casr je ne voulais pas trop biaisé vers la bonne réponse.
+		ii. 
+			- OpenBox :  Il s'agit simplement de la formule de l'aire basé sur la dimensions de X. 
+			- Extremum : J'utilise 4 paramêtre pour X1,Y1 et X2,Y2 pour avoir une paire de points avec la plus grande différence entre les 2. Ce qui nous donnes le maximum et le minimum.
+ 			- Cercle : Il s'agit de la somme des distances entre les points et le centre du cercle moins le rayon. Pour obtenir la distance total entre les points et le rayon du cercle. 
+	b. 
+		i. Taille de la population 𝑃 avec des valeurs dans l'ensemble [5,20,100]
+			5   -   Parametres : 8.000000 , 2.583731 , 5.706440 ,  et une valeur de la fonction objective de : 46.197275
+			20  -   Parametres : 6.658290 , 2.000000 , 4.856488 ,  et une valeur de la fonction objective de : 22.694438
+			100 -   Parametres : 6.923440 , 2.000000 , 4.999879 ,  et une valeur de la fonction objective de : 20.784061
+
+			Il semble que à l'augmentation de la population la qualité de la réponse tend à augmenter. Ce qui est logique car nous donnons plus de chance à l'algoithme d'obtenir une solution proche.
+
+		ii. Poids différentiel 𝐹 avec des valeurs dans l'ensemble [0.0,0.5,2.0]
+			0.0 - Parametres : 6.438896 , 2.390273 , 4.987655 ,  et une valeur de la fonction objective de : 30.373795
+			0.5 - Parametres : 7.088434 , 2.000000 , 5.327713 ,  et une valeur de la fonction objective de : 26.077938
+			2.0 - Parametres : 6.961960 , 2.000000 , 4.845193 ,  et une valeur de la fonction objective de : 20.664620
+
+			Il semble que à l'augmentation du poids différentiel 𝐹 pousse la qualité de la réponse tend à augmenter. Plus cette valeur est grande plus la différencre entre le S2 et le S3 aura un impact grand sur la solution.
+			Cependant suite à plusieurs essaie, la variabilité de l'algorithm semble augemnter de pair.
+
+		iii. Taux de mutation 𝐶𝑅 avec des valeurs dans l'ensemble [0.0,0.2,1.0]
+			0.0- Parametres : 7.365081 , 2.049490 , 5.312721 ,  et une valeur de la fonction objective de : 28.153386
+			0.2- Parametres : 6.940247 , 2.000000 , 4.828855 ,  et une valeur de la fonction objective de : 20.753665
+			1.0- Parametres : 6.942080 , 2.081154 , 4.557761 ,  et une valeur de la fonction objective de : 25.279481
+
+			Le taux de mutation 𝐶𝑅 doit atteindre un équilibre juste entre permettre un nombre de mutation suffisant pour trouver les bonnes valeurs et ne pas trop changer des valeurs qui était déjà bonne.
+
+
+4. Conception et développement de la classe GPA434Lab2 : 3 points
+	a. 
+
+		         ┌────────────────────────────────────────────┐                            ┌────────────────────────────────┐
+                 │              GPA434Lab2                    │                            │                                │
+                 ├────────────────────────────────────────────┤                            │          Solver                │
+                 │ - userRequestedOut: bool                   │                            │                                │
+                 │ - problem solver : Solver                  │                            └─────┬──────────────────────────┘
+                 │                                            │                                  │1
+                 ├────────────────────────────────────────────┤                                  │
+                 │ + GPA434Lab2()                             │                                  │
+                 │ + ~GPA434Lab2()                            │◄─────────────────────────────────┘
+                 │ - mainLoop()                               │
+                 │ - printTitle()                             │
+                 │ - chooseProblem()                          │
+                 │ - solveProblem ()                          │
+                 │                                            │
+                 │                                            │
+                 └────────────────────────────────────────────┘
+
+				 ◄─── = Composition
+
+	b. La classe GPA434Lab2 utilise la classe solver, mais en réalité elle va utiliser par polymorphisme les 3 classes enfants étant spécialisé pour chaque problème.
+		La conception en tant que telle est assez simple les seules fonction accessible est le constructeur et le destructeur qui démarre et conclut le programme. 
+		Cette conception permet très aisément d'ajouter une nombre illimé de problèeme tant que ces dernier hérite de la classe solver.
+
+5. Éléments du langage C++ : 4 points
+	a. 
+		i. Random::real(real, real) :  Pour éviter de créer un objet Random qui serait autrement inutile car il n'y a pas d'encapsulation pertienente. 
+		ii. DEFitness::identity : Pour que la référence soit toujours la même pour chaque pointeur vers cette dernière. Il est impossible d'avoir 2 fonction identity différente par la mot clé statique.
+		iii. OpenBoxSolver::process : Pour que la référence soit toujours la même pour chaque pointeur vers cette dernière. Il est impossible d'avoir 2 fonction process différente par la mot clé statique.
+		iv. OpenBoxProblem::smBoxWidth : Pour ne pas avoir à intancier de OpenBoxProblem pour avoir à utiliser cette valeur.
+		v. OpenBoxProblem:: smBoxHeight  (Est-ce qu'il y avait un typo ? Originallement OpenBoxProblem::boxWidth) : Pour ne pas avoir à intancier de OpenBoxProblem pour avoir à utiliser cette valeur. 
+
+
+	b.  
+	
+		Interval::~Interval  : Cette fonction est explicité defaulted pour rendre clair au utilisateur que le concepteur à penser et approuve à la suppréssion de cette classe.
+		Bien que la fonction serait ajouté quand même par le compilateur si elle n'était pas spécifié.
+
+		Random::Random : Cette fonction est deleted car cette classe utilitaire n'a aucun intéret à etre instancié. Elle ne contient que des variables et fonction statiques. 
+		C'est pour eviter une erreur de compréhension par des tiers que cette fonction est supprimé.
+
+	c. 
+		Puisque nos fonctions objective et de fitness sont statiques et que la fonction process dans nos solver doit logiquement l'être elle aussi. Nous rencontrons un problèmes évident.
+		Nos valeurs que nous fournis l'utilisateur doivent affectée la fonction objective qui est en ce moment dans un contexte statique.
+		Si cette dernière n'est pas dans un contexte statique cela veut dire que son addresse est determiné au moment de l'instanciation de la classe
+
+
+6. Discussion générale 3 points
+	a. 
+		i. Le fait d'avoir fait de l'hériate avec problem to solve nous a grandment faciliter l'affichage des problèmes. 
+			En effet, les elements d'affichage était tous commun et dans le parents. Avec du polymorphisme nous avons pu implementer l'affichage sans écrire du code pour chaque probleme.
+		ii. Quant à lui l'héritage du solver nous a permis de faire du polymorphsime dans GPA434Lab2 pour appeller le fonctioj solve, bestSolution et problemPrésentation de la même facons dans la fonction solveProblem().
+	b. 
+		Les constructeurs des solver sont très similaire à l'exception des valeurs spécifiques des domaines et des paramêtres.
+		Il aurait pu être interssement d'avoir un classe tier qui encapsule ces elements que gpa434lab2 passerait lors de l'instanciation d'un Solver.
+
+7. J'ignore si il s'agissaite d'une coquille mais pour 5 : a. :V. Il semble qu'il y ait une repetion.

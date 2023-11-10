@@ -20,7 +20,6 @@ public:
 
 	DESolution& operator[] (size_t index);
 	DESolution bestSolution() const;
-	DESolution secondBestSolutionWithOppositeValue(DESolution bestSolution) const;
 	void add(DESolution const& solution);
 	void reset();
 
